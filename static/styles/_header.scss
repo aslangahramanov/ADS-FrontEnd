@@ -1,0 +1,180 @@
+#header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 60px 0;
+    background: transparent;
+    z-index: 200;
+    transition: padding 0.3s, background-color 0.3s;
+
+    .logo{
+        .image{
+            width: 180px;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .lang{
+            margin:0 0 0 50px;
+            ul{
+                padding: 4px 12px !important;
+                border-radius: 40px;
+                background-color: #242424;
+                cursor: pointer;
+                position: relative;
+                li{
+                    color: white;
+                    font-size: 12px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                }
+
+                i{
+                    color: white;
+                    font-size: 12px;
+                    margin-left: 5px;
+                }
+
+                .lang-dropdown{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    visibility: hidden;
+                    opacity: 0;
+                    transition: 300ms;
+
+                    ul{
+                        margin-top: 0px;
+                        transition: 300ms;
+                    }
+                    
+                }
+
+                .active{
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                    ul{
+                        margin-top: 5px !important;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .navbar{
+        ul{
+            li{
+                margin-left: 24px;
+                a{
+                    color: white;
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+                    position: relative;
+                    padding: 2px 4px;
+
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        top: 100%;
+                        right: 0;
+                        width: 0%;
+                        height: 1px;
+                        background-color: #F05F6B;
+                        margin-top: 9px;
+                        transition: 500ms;
+                        
+                    }
+
+                    &:hover{
+                        &::after{
+                            width: 100%;
+                            left: 0;
+                        }
+                    }
+                }
+
+                button {
+                    padding: 7px 24px;
+                    border-radius: 50px;
+                    background: transparent;
+                    border: 1px solid rgb(255, 255, 255);
+                    position: relative;
+                    cursor: pointer;
+                  
+                  
+                    &::after {
+                      position: absolute;
+                      content: "";
+                      height: 0%;
+                      width: 0%;
+                      left: 50%;
+                      right: 0%;
+                      top: 50%;
+                      background-color: white;
+                      border-top-left-radius: 50px;
+                      border-bottom-left-radius: 50px;
+                      transition: 400ms ease-in-out;
+                    }
+                  
+                    &::before {
+                      position: absolute;
+                      content: "";
+                      height: 0%;
+                      width: 0%;
+                      right: 0;
+                      left: 50%;
+                      top: 50%;
+                      background-color: white;
+                      border-top-right-radius: 50px;
+                      border-bottom-right-radius: 50px;
+                      transition: 400ms ease-in-out;
+                    }
+
+                    span {
+                      color: white;
+                      font-size: 16px;
+                      line-height: 24px;
+                      font-weight: 400;
+                      letter-spacing: 1px;
+                      position: relative;
+                      z-index: 10;
+                      transition: 400ms;
+                    }
+                  
+                    &:hover {
+                  
+                      &::after {
+                        width: 50%;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                      }
+                  
+                      &::before {
+                        width: 50%;
+                        height: 100%;
+                        top: 0;
+                      }
+
+                      span {
+                        color: black !important;
+                      }
+                    }
+                  }
+                  
+            }
+        }
+    }
+}
+
+
+.scrolled {
+    background-color: black !important;
+    padding: 20px 0 !important;
+  }

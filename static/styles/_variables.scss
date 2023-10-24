@@ -1,0 +1,50 @@
+@font-face{
+    font-family:"helvetica";
+    src:url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Reset some default styles */
+a {
+    text-decoration: none !important;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+/* Define some default text styles */
+body {
+    font-family: 'helvetica';
+    background-color: black;
+}
+
+
+
+
+.custom-container {
+    width: 88% !important;
+    margin: auto;
+}
+
+
+
+  /* Yatay scroll çubuğu rengini değiştirme (sadece Webkit tabanlı tarayıcılarda çalışır) */
+::-webkit-scrollbar {
+    background: transparent;
+    width: 2px;
+  }
+  
+/* Yatay scroll çubuğu kaydırma kısmını değiştirme */
+::-webkit-scrollbar-thumb {
+background: #525050;
+}
