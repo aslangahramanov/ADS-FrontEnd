@@ -194,17 +194,20 @@ body {
 
 @media screen and (max-width: 767px) {
   #header {
-    padding-right: 30px !important;
-    padding-left: 30px !important;
+    padding: 30px !important;
   }
   #header .logo .image {
-    width: 120px !important;
+    width: 130px !important;
   }
   #header .logo .lang {
-    margin: 0 0 0 25px !important;
+    margin: 0 0 0 20px !important;
   }
   #header .logo .lang ul {
-    padding: 4px 10px !important;
+    padding: 3px 9px !important;
+  }
+  #header .logo .lang ul li {
+    font-size: 11px !important;
+    margin-top: 1px !important;
   }
   #header .navbar {
     display: none;
@@ -656,7 +659,7 @@ main {
   #hero .information .left h1 {
     font-size: 30px !important;
     margin-bottom: 10px !important;
-    line-height: 25px !important;
+    line-height: 27px !important;
   }
   #hero .information .left .responsive-text {
     display: block !important;
@@ -664,7 +667,7 @@ main {
     margin: 20px auto !important;
   }
   #hero .information .left .responsive-text p {
-    font-size: 15px !important;
+    font-size: 16px !important;
     color: #B3B3B3 !important;
   }
   #hero .information .left .buttons {
@@ -675,6 +678,7 @@ main {
     padding: 12px 42px !important;
     font-size: 18px !important;
     font-weight: bold !important;
+    color: black !important;
   }
   #hero .information .left .buttons span {
     display: none !important;
@@ -699,7 +703,7 @@ main {
     text-align: center !important;
   }
   #hero .social-and-mail .mail a {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   #about {
     width: 100%;
@@ -778,10 +782,10 @@ main {
     padding: 6rem 10px 0 10px !important;
   }
   #about .about-text .text h2 {
-    font-size: 22px !important;
+    font-size: 24px !important;
   }
   #about .about-text .text p {
-    font-size: 14px !important;
+    font-size: 16px !important;
   }
   #about .about-text hr {
     margin: 30px 0 !important;
@@ -800,7 +804,7 @@ main {
     padding: 0 !important;
   }
   #peoples #founder .title {
-    padding: 4rem 20px 0 20px !important;
+    padding: 4rem 20px 0 35px !important;
     margin-bottom: 2.5rem !important;
   }
   #peoples #founder .title h2 {
@@ -829,7 +833,7 @@ main {
     padding: 4rem 20px 0 20px !important;
   }
   #peoples #founder .founder-about .text-wrapper span {
-    font-size: 15px !important;
+    font-size: 16px !important;
     line-height: 20px !important;
     letter-spacing: 0px !important;
   }
@@ -963,6 +967,7 @@ main {
     color: #AAAAAA;
   }
   #footer .footer-info .footer-icons {
+    display: block !important;
     margin: 30px auto !important;
   }
   #footer .footer-info .footer-icons .icons ul li {
