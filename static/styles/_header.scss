@@ -1,4 +1,4 @@
-#header{
+#header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -7,38 +7,41 @@
     z-index: 200;
     transition: padding 0.3s, background-color 0.3s;
 
-    .logo{
-        .image{
+    .logo {
+        .image {
             width: 180px;
-            img{
+
+            img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
             }
         }
 
-        .lang{
-            margin:0 0 0 50px;
-            ul{
+        .lang {
+            margin: 0 0 0 50px;
+
+            ul {
                 padding: 4px 12px !important;
                 border-radius: 40px;
                 background-color: #242424;
                 cursor: pointer;
                 position: relative;
-                li{
+
+                li {
                     color: white;
                     font-size: 12px;
                     font-weight: 400;
                     letter-spacing: 1px;
                 }
 
-                i{
+                i {
                     color: white;
                     font-size: 12px;
                     margin-left: 5px;
                 }
 
-                .lang-dropdown{
+                .lang-dropdown {
                     position: absolute;
                     top: 100%;
                     left: 0;
@@ -46,17 +49,18 @@
                     opacity: 0;
                     transition: 300ms;
 
-                    ul{
+                    ul {
                         margin-top: 0px;
                         transition: 300ms;
                     }
-                    
+
                 }
 
-                .active{
+                .active {
                     visibility: visible !important;
                     opacity: 1 !important;
-                    ul{
+
+                    ul {
                         margin-top: 5px !important;
                     }
                 }
@@ -65,11 +69,12 @@
     }
 
 
-    .navbar{
-        ul{
-            li{
+    .navbar {
+        ul {
+            li {
                 margin-left: 24px;
-                a{
+
+                a {
                     color: white;
                     font-size: 16px;
                     line-height: 24px;
@@ -78,7 +83,7 @@
                     position: relative;
                     padding: 2px 4px;
 
-                    &::after{
+                    &::after {
                         position: absolute;
                         content: "";
                         top: 100%;
@@ -88,11 +93,11 @@
                         background-color: #F05F6B;
                         margin-top: 9px;
                         transition: 500ms;
-                        
+
                     }
 
-                    &:hover{
-                        &::after{
+                    &:hover {
+                        &::after {
                             width: 100%;
                             left: 0;
                         }
@@ -106,70 +111,74 @@
                     border: 1px solid rgb(255, 255, 255);
                     position: relative;
                     cursor: pointer;
-                  
-                  
+
+
                     &::after {
-                      position: absolute;
-                      content: "";
-                      height: 0%;
-                      width: 0%;
-                      left: 50%;
-                      right: 0%;
-                      top: 50%;
-                      background-color: white;
-                      border-top-left-radius: 50px;
-                      border-bottom-left-radius: 50px;
-                      transition: 400ms ease-in-out;
+                        position: absolute;
+                        content: "";
+                        height: 0%;
+                        width: 0%;
+                        left: 50%;
+                        right: 0%;
+                        top: 50%;
+                        background-color: white;
+                        border-top-left-radius: 50px;
+                        border-bottom-left-radius: 50px;
+                        transition: 400ms ease-in-out;
                     }
-                  
+
                     &::before {
-                      position: absolute;
-                      content: "";
-                      height: 0%;
-                      width: 0%;
-                      right: 0;
-                      left: 50%;
-                      top: 50%;
-                      background-color: white;
-                      border-top-right-radius: 50px;
-                      border-bottom-right-radius: 50px;
-                      transition: 400ms ease-in-out;
+                        position: absolute;
+                        content: "";
+                        height: 0%;
+                        width: 0%;
+                        right: 0;
+                        left: 50%;
+                        top: 50%;
+                        background-color: white;
+                        border-top-right-radius: 50px;
+                        border-bottom-right-radius: 50px;
+                        transition: 400ms ease-in-out;
                     }
 
                     span {
-                      color: white;
-                      font-size: 16px;
-                      line-height: 24px;
-                      font-weight: 400;
-                      letter-spacing: 1px;
-                      position: relative;
-                      z-index: 10;
-                      transition: 400ms;
+                        color: white;
+                        font-size: 16px;
+                        line-height: 24px;
+                        font-weight: 400;
+                        letter-spacing: 1px;
+                        position: relative;
+                        z-index: 10;
+                        transition: 400ms;
                     }
-                  
-                    &:hover {
-                  
-                      &::after {
-                        width: 50%;
-                        height: 100%;
-                        left: 0;
-                        top: 0;
-                      }
-                  
-                      &::before {
-                        width: 50%;
-                        height: 100%;
-                        top: 0;
-                      }
 
-                      span {
-                        color: black !important;
-                      }
+                    &:hover {
+
+                        &::after {
+                            width: 50%;
+                            height: 100%;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        &::before {
+                            width: 50%;
+                            height: 100%;
+                            top: 0;
+                        }
+
+                        span {
+                            color: black !important;
+                        }
                     }
-                  }
-                  
+                }
+
             }
         }
+    }
+
+    .menu-bar{
+        display: none;
     }
 }
 
@@ -177,4 +186,54 @@
 .scrolled {
     background-color: black !important;
     padding: 20px 0 !important;
-  }
+}
+
+
+@media screen and (max-width: 767px) {
+
+    #header {
+        padding-right: 30px !important;
+        padding-left: 30px !important;
+        .logo {
+            .image {
+                width: 120px !important;
+            }
+    
+            .lang {
+                margin: 0 0 0 25px !important;
+    
+                ul {
+                    padding: 4px 10px !important;
+                }
+            }
+        }
+    
+    
+        .navbar {
+            display: none;
+
+        }
+
+        .menu-bar{
+            display: block;
+            width: 20% !important;
+            text-align: end;
+            cursor: pointer;
+
+            i{
+                font-size: 40px !important;
+                color: white;
+            }
+        }
+    }
+    
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tabletler için özel stil ayarları */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1229px) {
+    /* Tabletler için özel stil ayarları */
+}

@@ -8,6 +8,10 @@
         }
     }
 
+    .footer-icons{
+        display: none;
+    }
+
     .footer-right{
         h3{
             font-size: 18px;
@@ -15,4 +19,74 @@
             color: #AAAAAA;
         }
     }
+}
+
+
+@media screen and (max-width: 767px) {
+    #footer{
+        padding: 40px 0 !important;
+        
+        
+        .footer-info{
+            flex-direction: column !important;
+            text-align: center;
+
+            .footer-left{
+                a{
+                    font-size: 16px;
+                    color: #AAAAAA;
+                }
+            }
+
+            .footer-icons{
+                margin: 30px auto !important;
+                .icons {
+                    ul {
+                        li {
+                            margin-right: 10px;
+    
+                            a {
+                                border: 1px solid white;
+                                border-radius: 50%;
+                                padding: 8px;
+    
+                                i {
+                                    width: 18px;
+                                    height: 18px;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    color: white;
+                                    transition: 400ms ease-in-out;
+    
+                                }
+    
+    
+                                &:hover {
+                                    i {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        
+            .footer-right{
+                h3{
+                    font-size: 14px !important;
+                    text-align: center;
+                    color: #AAAAAA;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tabletler için özel stil ayarları */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1229px) {
+    /* Tabletler için özel stil ayarları */
 }
