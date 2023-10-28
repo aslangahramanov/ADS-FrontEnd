@@ -22,6 +22,9 @@ a {
 body {
   font-family: "helvetica";
   background-color: black;
+  -webkit-user-select: none !important;
+     -moz-user-select: none !important;
+          user-select: none !important;
 }
 
 .custom-container {
@@ -119,14 +122,12 @@ body {
   height: 1px;
   background-color: #F05F6B;
   margin-top: 9px;
-  transition: 500ms;
 }
 #header .navbar ul li a:hover::after {
   width: 100%;
-  left: 0;
 }
 #header .navbar ul li button {
-  padding: 7px 24px;
+  padding: 7px 30px;
   border-radius: 50px;
   background: transparent;
   border: 1px solid rgb(255, 255, 255);
@@ -229,24 +230,17 @@ body {
 @media screen and (min-width: 1024px) and (max-width: 1229px) {
   /* Tabletler için özel stil ayarları */
 }
-main {
-  background: url(../../images/footer-back-layer.png);
-  background-position: -500px 4750px;
-  background-repeat: no-repeat;
-  background-size: 160% auto !important;
-}
-
 #hero {
   background: url(../../images/layer-hero.png);
   width: 100%;
-  padding-top: 12rem;
+  padding-top: 14rem;
   background-position: -1500px -1380px;
 }
 #hero .information {
-  padding: 0 60px 0 90px;
+  padding: 0 5rem 0 7rem;
 }
 #hero .information .left h1 {
-  font-size: 50px;
+  font-size: 45px;
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
@@ -279,7 +273,7 @@ main {
 }
 #hero .social-and-mail {
   width: 100%;
-  padding: 80px 0;
+  padding: 8.5rem 0;
 }
 #hero .social-and-mail .social-media span {
   color: white;
@@ -437,7 +431,7 @@ main {
 #about .about-text .text p {
   font-size: 16px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.362);
 }
 #about .about-text hr {
   width: 100%;
@@ -451,7 +445,7 @@ main {
   background-image: url(../../images/layer-one.png), url(../../images/layer-two.png);
   background-repeat: no-repeat, no-repeat;
   background-size: 200%, 200%;
-  background-position: -1800px 300px, -1800px 950px;
+  background-position: -1850px 325px, -1850px 925px;
 }
 #peoples #founder {
   padding: 9rem 60px 0 90px;
@@ -467,6 +461,16 @@ main {
 #peoples #founder .image {
   padding-right: 40px;
   position: relative;
+}
+#peoples #founder .image .founder-box {
+  width: 100%;
+  height: 340px;
+  border-top-right-radius: 300px;
+  border-bottom-right-radius: 300px;
+  background: url(../../images/Mask\ Group\ 47.png);
+  background-size: 125%;
+  background-repeat: no-repeat;
+  background-position: 0 -100px;
 }
 #peoples #founder .image .name {
   position: absolute;
@@ -515,7 +519,7 @@ main {
 #peoples #announcers .announcers-slider .box .announcer-image,
 #peoples #judges .announcers-slider .box .announcer-image {
   width: 100%;
-  height: 290px;
+  height: 250px;
 }
 #peoples #announcers .announcers-slider .box .announcer-image img,
 #peoples #judges .announcers-slider .box .announcer-image img {
@@ -545,20 +549,6 @@ main {
   color: #E4E4E4;
   font-weight: 400;
   opacity: 0.7;
-}
-#peoples .swiper {
-  width: 100%;
-  height: 100%;
-}
-#peoples .swiper-slide {
-  margin: 0 !important;
-}
-#peoples .swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #partners {
@@ -938,9 +928,137 @@ main {
 @media screen and (min-width: 1024px) and (max-width: 1229px) {
   /* Tabletler için özel stil ayarları */
 }
-#footer {
-  padding: 6rem 60px 3rem 90px;
+#register {
+  padding: 15rem 0 10rem 0;
 }
+#register .title {
+  margin-bottom: 4rem;
+}
+#register .title h1 {
+  font-size: 44px;
+  color: white;
+}
+#register .image {
+  margin-right: 60px !important;
+}
+#register .image .file-input {
+  display: none;
+}
+#register .image .image-box {
+  width: 150px;
+}
+#register .image .image-box .user-image {
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#register .image .image-box .user-image .icon-image {
+  width: 30%;
+  height: 30%;
+  display: block;
+}
+#register .image .image-box .user-image .select-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  display: none;
+}
+#register .image .image-box .image-text {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+#register .image .image-box .image-text span {
+  color: white;
+}
+#register .info .base-info, #register .info .password-info {
+  margin-bottom: 30px;
+}
+#register .info .base-info strong, #register .info .password-info strong {
+  display: block;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  line-height: 18px;
+}
+#register .info .base-info span, #register .info .password-info span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.562);
+}
+#register .info input {
+  width: 30%;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: 1px solid white;
+  padding: 10px 20px;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#register .info .email-input {
+  width: 45% !important;
+}
+#register .info .country-wrapper {
+  width: 45% !important;
+  position: relative;
+}
+#register .info .country-wrapper .country-input {
+  width: 100%;
+  cursor: pointer;
+}
+#register .info .country-wrapper i {
+  position: absolute;
+  color: white;
+  top: 25%;
+  transform: translateY(-25%);
+  right: 5%;
+  cursor: pointer;
+}
+#register .info .country-wrapper .countries {
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  width: 100%;
+  height: 250px;
+  overflow-y: scroll;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+}
+#register .info .country-wrapper .countries ul {
+  background-color: black;
+}
+#register .info .country-wrapper .countries ul li {
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.373);
+  cursor: pointer;
+  transition: 100ms;
+}
+#register .info .country-wrapper .countries ul li:hover {
+  background-color: rgb(36, 36, 36);
+}
+#register .info .country-wrapper .active-box {
+  display: block !important;
+}
+#register .register-submit {
+  background-color: white;
+  padding: 10px 40px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  cursor: pointer;
+}
+
 #footer .footer-left a {
   font-size: 16px;
   color: #AAAAAA;

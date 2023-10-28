@@ -92,20 +92,18 @@
                         height: 1px;
                         background-color: #F05F6B;
                         margin-top: 9px;
-                        transition: 500ms;
 
                     }
 
                     &:hover {
                         &::after {
                             width: 100%;
-                            left: 0;
                         }
                     }
                 }
 
                 button {
-                    padding: 7px 24px;
+                    padding: 7px 30px;
                     border-radius: 50px;
                     background: transparent;
                     border: 1px solid rgb(255, 255, 255);
