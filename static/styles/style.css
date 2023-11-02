@@ -184,6 +184,13 @@ body {
 #header .navbar ul li button:hover span {
   color: black !important;
 }
+#header .navbar ul .username {
+  margin-left: 50px;
+}
+#header .navbar ul .username span {
+  color: white;
+  font-size: 15px;
+}
 #header .menu-bar {
   display: none;
 }
@@ -258,6 +265,8 @@ body {
   font-weight: 500;
   cursor: pointer;
   position: relative;
+  background-color: white;
+  color: black;
 }
 #hero .information .left .buttons span {
   margin-left: 30px;
@@ -578,6 +587,83 @@ body {
   background-color: #0D0D0D;
 }
 
+#login-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 500;
+}
+#login-popup .login-wrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(13, 13, 13, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+#login-popup .login-box {
+  width: 30%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 700;
+}
+#login-popup .login-box .head-title h3 {
+  font-size: 30px;
+  color: black;
+  font-weight: 500;
+}
+#login-popup .login-box .login-form .login-input {
+  width: 90%;
+  padding: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  outline: none;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+#login-popup .login-box .login-form .checkbox-input {
+  margin: 10px 0;
+}
+#login-popup .login-box .login-form .checkbox-input input {
+  width: 30px;
+}
+#login-popup .login-box .login-form .checkbox-input label {
+  font-size: 16px;
+  margin: 0 !important;
+}
+#login-popup .login-box .login-form .buttons {
+  margin: 25px 0;
+}
+#login-popup .login-box .login-form .buttons .login-button {
+  padding: 12px 30px;
+  margin-right: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: black;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+#login-popup .login-box .login-form .buttons .register-button {
+  color: black;
+  font-size: 16px;
+}
+#login-popup .login-box .login-form .restore-password {
+  color: black;
+  font-size: 14px;
+  text-decoration: underline !important;
+  padding: 5px 0;
+}
+
+@keyframes login-animation {}
 @keyframes frequence-before {
   0% {
     width: 90px;
@@ -1057,6 +1143,170 @@ body {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   cursor: pointer;
+}
+
+#send-design {
+  padding: 14rem 0 10rem 0;
+  width: 100%;
+}
+#send-design .head-title {
+  width: 100%;
+  margin-bottom: 40px;
+}
+#send-design .head-title h1 {
+  font-size: 40px;
+  color: white;
+}
+#send-design .sub-title {
+  width: 100%;
+}
+#send-design .sub-title strong {
+  font-size: 16px;
+  color: white !important;
+  display: block;
+  letter-spacing: 1px;
+}
+#send-design .sub-title span {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.65);
+  letter-spacing: 1px;
+}
+#send-design .design-box {
+  margin-right: 5rem !important;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 4rem !important;
+}
+#send-design .design-box .category-input {
+  width: 70%;
+  padding: 10px 20px;
+  outline: none;
+  border: 1px solid white;
+  background-color: transparent;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  margin-bottom: 20px;
+  position: relative;
+  color: white;
+}
+#send-design .design-box #category-open-icon {
+  position: absolute;
+  top: 25%;
+  left: 63%;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.471);
+}
+#send-design .design-box .categoryes {
+  width: 70%;
+  display: none;
+  position: absolute;
+  z-index: 20;
+  top: 50%;
+  margin-top: 10px;
+  height: 150px;
+  overflow-y: scroll;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  background-color: black;
+}
+#send-design .design-box .categoryes ul {
+  background-color: black;
+}
+#send-design .design-box .categoryes ul li {
+  color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.373);
+  cursor: pointer;
+  transition: 100ms;
+}
+#send-design .design-box .categoryes ul li:hover {
+  background-color: rgb(36, 36, 36);
+}
+#send-design .design-box .active-box {
+  display: block !important;
+}
+#send-design .design-box .add-column {
+  margin-bottom: 20px !important;
+}
+#send-design .design-box .add-column i {
+  padding: 8px 9px;
+  border-radius: 60%;
+  color: white;
+  background-color: #F05F6B;
+  margin-right: 15px;
+}
+#send-design .design-box .add-column span {
+  color: white;
+  font-size: 16px;
+}
+#send-design .design-box .image {
+  width: 20%;
+  padding: 30px 0 !important;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  cursor: pointer;
+}
+#send-design .design-box .image .file-input {
+  display: none;
+}
+#send-design .design-box .image .select-image {
+  display: none;
+}
+#send-design .design-box .image .icon-image {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+#send-design .design-box .text {
+  width: 55%;
+  height: 100px;
+  overflow: hidden;
+}
+#send-design .design-box .text textarea {
+  width: 100%;
+  height: 100%;
+  padding: 10px 50px 55px 20px;
+  border: 1px solid white;
+  outline: none;
+  background-color: transparent;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: white;
+  word-wrap: break-word;
+  resize: none;
+}
+#send-design .design-box .info-text {
+  width: 100%;
+  margin-top: 30px;
+}
+#send-design .design-box .info-text .text-one {
+  display: block;
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+#send-design .design-box .info-text .text-two {
+  display: block;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.596);
+  font-weight: 300;
+}
+#send-design .send-button {
+  margin-top: 5rem;
+}
+#send-design .send-button button {
+  padding: 10px 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  color: black;
+  background-color: white;
+  font-size: 18px;
 }
 
 #footer .footer-left a {
