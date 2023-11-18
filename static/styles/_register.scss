@@ -162,3 +162,234 @@
         cursor: pointer;
     }
 }
+
+
+@media screen and (max-width: 767px) {
+    #register{
+        padding: 8rem 0 5rem 0 !important;
+        
+    
+        .title{
+            h1{
+                font-size: 34px !important;
+                color: white;
+            }
+        }
+
+        .wrapper{
+            flex-direction: column !important;
+        }
+
+        .image{
+            margin-right: 0px !important;
+            width: 100% !important;
+            
+    
+            .image-box{
+                width: 150px;
+                margin: 0 auto 4rem auto !important;
+
+
+            }
+        }
+    
+        .info{
+            .base-info, .password-info{
+                margin-bottom: 30px;
+                strong{
+                    display: block;
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 500;
+                    line-height: 18px;
+                }
+    
+                span{
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 0.562);
+                }
+            }
+    
+            .input-wrappers{
+                flex-direction: column;
+            }
+            
+            input{
+                width: 100% !important;
+                padding: 15px 20px !important;
+                margin-right: 0px !important;
+            }
+    
+            .email-input{
+                width: 100% !important;
+            }
+    
+            .country-wrapper{
+                width: 100% !important;
+    
+                .country-input{
+                    width: 100%;
+                }
+    
+                i{
+                    position: absolute;
+                    color: white;
+                    top: 25%;
+                    transform: translateY(-25%);
+                    right: 5%;
+                    cursor: pointer;
+                }
+    
+    
+            }
+    
+            
+        }
+    
+        .register-submit{
+            padding: 12 48px !important;
+            font-size: 20px !important;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    #register{
+        padding: 12rem 0 9rem 0 !important;
+        
+    
+        .title{
+            margin-bottom: 4rem;
+    
+        }
+        .wrapper{
+            flex-direction: column !important;
+        }
+        .image{
+            margin-right: 0px !important;
+            width: 100% !important;
+    
+            .image-box{
+                width: 220px !important;
+                margin: 0 auto 5rem auto;
+    
+                .user-image{
+                    border: 1px solid white;
+                    width: 100%;
+                    height: 220px !important;
+        
+                }
+        
+            }
+        }
+    
+        .info{
+            .base-info, .password-info{
+                margin-bottom: 30px;
+                strong{
+                    display: block;
+                    font-size: 18px;
+                    color: white;
+                    font-weight: 500;
+                    line-height: 18px;
+                }
+    
+                span{
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 0.562);
+                }
+            }
+    
+            .input-wrappers{
+                flex-direction: column !important;
+            }
+    
+            input{
+                width: 100% !important;
+                background-color: transparent;
+                color: white;
+                outline: none;
+                border: 1px solid white;
+                padding: 10px 20px;
+                margin-right: 0px !important;
+                margin-bottom: 40px;
+                border-top-right-radius: 50px;
+                border-bottom-right-radius: 50px;
+    
+            }
+    
+            .email-input{
+                width: 100% !important;
+            }
+    
+            .country-wrapper{
+                width: 100% !important;
+                position: relative;
+    
+                .country-input{
+                    width: 100%;
+                    cursor: pointer;
+                }
+    
+                i{
+                    position: absolute;
+                    color: white;
+                    top: 25%;
+                    transform: translateY(-25%);
+                    right: 5%;
+                    cursor: pointer;
+                }
+    
+                .countries{
+                    display: none;
+                    position: absolute;
+                    z-index: 20;
+                    top: 50%;
+                    width: 100%;
+                    height: 250px;
+                    overflow-y: scroll;
+                    border-bottom: 1px solid white;
+                    border-right: 1px solid white;
+                    border-left: 1px solid white;
+    
+                    ul{
+                        background-color: black;
+    
+    
+                        li{
+                            color: white;
+                            padding: 10px 20px;
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.373);
+                            cursor: pointer;
+                            transition: 100ms;
+    
+                            &:hover{
+                                background-color: rgb(36, 36, 36);
+                            }
+    
+                        }
+                    }
+                }
+    
+                .active-box{
+                    display: block !important;
+                }
+            }
+    
+            
+        }
+    
+        .register-submit{
+            background-color: white;
+            padding: 10px 40px;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            cursor: pointer;
+        }
+    }
+}
+
+// @media screen and (min-width: 1024px) and (max-width: 1229px) {
+//     /* Tabletler için özel stil ayarları */
+// }

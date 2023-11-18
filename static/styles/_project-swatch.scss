@@ -1,0 +1,132 @@
+#project-view{
+    margin-top: 15rem;
+    width: 100%;
+    
+    .left-wrapper{
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .base-image{
+        width: 75%;
+        background-color: white;
+        }
+
+        .column-box{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-left: 20px;
+
+
+            .image-box{
+                height: 22%;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    background-color: white;
+                }
+            }
+        }
+
+
+    }
+
+    .right-wrapper{
+        margin-left: 40px;
+        
+
+        .title, .description{
+            margin-bottom: 3rem;
+
+            h1{
+                color: white;
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+
+            p{
+                color: white;
+                font-size: 16px;
+            }
+        }
+
+        .reyting{
+            .stars {
+                width: 100%;
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+
+                i {
+                    font-size: 26px;
+                    color: #FEC007;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .submit-btn{
+            margin-top: 4rem;
+            button{
+                border: 1px solid white;
+                background-color: transparent;
+                padding: 6px 35px;
+                font-size: 16px;
+                border-radius: 50px;
+                color: white;
+            }
+        }
+    }
+
+
+    .navigations{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        margin-top: 40px;
+
+        .prev-btn, .next-btn{
+            display: flex;
+            align-items: center;
+
+            .icon{
+                border: 1px solid white;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                position: relative;
+                margin-right: 15px;
+
+                i{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    color: white;
+                }
+            }
+
+
+            .text{
+                span{
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .next-btn{
+            margin-right: 20px;
+
+            .icon{
+                margin-left: 20px !important;
+            }
+        }
+    }
+}

@@ -31,35 +31,42 @@ langList.forEach((lang) => {
   });
 });
 
-document.querySelectorAll("#header .navbar a").forEach((anchor) => {
-  anchor.addEventListener("click", function (e) {
-    e.preventDefault();
+const playButton = document.querySelector("#about .summit-video .play-button");
 
-    const targetId = this.getAttribute("href").substring(1); // Bağlantının hedef ID'sini alın
-    const targetElement = document.getElementById(targetId); // Hedef elementi alın
+if (playButton) {
+  document
+    .querySelectorAll("#header .navbar .inline-link")
+    .forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
 
-    if (targetElement) {
-      // Sayfayı hedef elementin üstüne kaydırın
+        const targetId = this.getAttribute("href").substring(1); // Bağlantının hedef ID'sini alın
+        const targetElement = document.getElementById(targetId); // Hedef elementi alın
+
+        if (targetId == "index.html") {
+        }
+
+        if (targetElement) {
+          // Sayfayı hedef elementin üstüne kaydırın
+          window.scrollTo({
+            top: targetElement.offsetTop,
+            behavior: "smooth", // Yumuşak kaydırma efekti ekler
+          });
+        }
+      });
+    });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentHash = window.location.hash;
+    if (currentHash === "#about") {
       window.scrollTo({
-        top: targetElement.offsetTop,
-        behavior: "smooth", // Yumuşak kaydırma efekti ekler
+        top: 0,
+        behavior: "smooth",
       });
     }
   });
-});
+}
 
-document.addEventListener("DOMContentLoaded", function () {
-  // Sayfa yüklendiğinde "about" sekmesine tıklanmışsa sayfanın başına git
-  const currentHash = window.location.hash;
-  if (currentHash === "#about") {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  }
-});
-
-const playButton = document.querySelector("#about .summit-video .play-button");
 const openVideoWrapper = document.querySelector("#about .wrapper");
 const youtubeVideo = document.querySelector(
   "#about .wrapper .videoframe iframe"
@@ -1155,18 +1162,9 @@ const sendDesignSection = document.getElementById("send-design");
 
 if (sendDesignSection) {
   const categoryInput = document.getElementById("category-input");
-  // const imageFileInput = document.getElementById("file-input")
-  // const iconImage = document.getElementById("icon-image")
-  // const imageBox = document.getElementById("user-image")
-  // const selectImage = document.getElementById("select-image")
+
   const categoryList = document.getElementById("category-list");
   const categoryesBox = document.getElementById("categoryes");
-
-  // categoryes.categoryes.forEach(category => {
-  //   const listItem = document.createElement('li');
-  //   listItem.textContent = category.name;
-  //   categoryList.appendChild(listItem);
-  // });
 
   categoryInput.addEventListener("click", () => {
     if (categoryesBox.classList.contains("active-box")) {
@@ -1244,6 +1242,7 @@ if (sendDesignSection) {
       const textarea = document.createElement("textarea");
       textarea.placeholder = "Görüntü haqqında qısa mətn...";
       textarea.maxLength = "150";
+      textarea.id = "focus-func";
       textDiv.appendChild(textarea);
 
       // Bilgi metinlerini ekleyin
@@ -1260,6 +1259,52 @@ if (sendDesignSection) {
       // Oluşturulan div'i belirli bir DOM öğesine ekleyin (örneğin, bir form veya bir başka div)
       boxWrapper.appendChild(newDiv);
       boxCreated = true;
+
+      const newEls = document.getElementById("focus-func");
+
+      newEls.focus();
     }
   });
 }
+
+const projectBoxes = document.querySelectorAll(".project-input");
+
+
+projectBoxes.forEach((project) => {
+  project.addEventListener("click", () => {
+    // Projeye özgü elementleri seçmek için querySelector kullanın
+    const imageFileInputProject = project.querySelector(".file-input");
+    const iconImageProject = project.querySelector(".icon-image");
+    const imageBoxProject = project.querySelector("#image-project");
+    const selectImageProject = project.querySelector(".select-image");
+
+    imageBoxProject.addEventListener("click", () => {
+      imageFileInputProject.click();
+      imageFileInputProject.addEventListener("change", function () {
+        let imageFile = imageFileInputProject.files[0];
+        if (imageFile) {
+          const imageUrl = URL.createObjectURL(imageFile);
+          iconImageProject.style.display = "none";
+          selectImageProject.style.display = "block";
+          selectImageProject.src = imageUrl;
+        } else {
+          selectImageProject.src = "";
+        }
+      });
+    });
+  });
+});
+
+// imageBoxProject.addEventListener("click", () => {
+//   imageFileInputProject.click();
+//   imageFileInputProject.addEventListener("change", function () {
+//     let imageFile = imageFileInputProject.files[0];
+//     if (imageFile) {
+//       const imageUrl = URL.createObjectURL(imageFile);
+//       iconImageProject.style.display = "none";
+//       imageFileInputProject.style.display = "block";
+//       imageFileInputProject.src = imageUrl;
+//     } else {
+//       imageFileInputProject.src = "";
+//     }
+//   });
