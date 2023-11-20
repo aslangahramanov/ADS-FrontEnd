@@ -56,7 +56,7 @@
             <ul
               class="list-unstyled d-flex justify-content-between align-items-center m-0 p-0"
             >
-            <li class="active"><a href="index.html">Ana Səhifə</a></li>
+            <!-- <li class="active"><a href="index.html">Ana Səhifə</a></li>
             <li><a href="">Haqqımızda</a></li>
             <li><a href="">Spiker</a></li>
             <li><a href="">Partnyorlar</a></li>
@@ -64,15 +64,32 @@
             <li><button id="login-button" type="button">
                       <span>Daxil ol</span>
                   </button>
-              </li>
-              <!-- <li class="username">
+              </li> -->
+              <li class="username">
                   <span>İştirakçı / </span><span>Aslan Qəhrəmanov</span>
-                </li> -->
-              <!-- <li>
+                </li>
+              <li>
                   <button type="button">
                     <span>Çıxış</span>
                   </button>
-                </li> -->
+                </li>
+                <li>
+                  <input
+                    id="select-menu"
+                  class="select-menu"
+                  type="text"
+                  value="Qablaşdırma dizaynı"
+                  readonly
+                />
+                <i id="concept-open-icon" class="fa-solid fa-angle-down"></i>
+                  <div id="concepts" class="categoryes">
+                    <!-- <ul id="concept-list" class="list-unstyled m-0 p-0">
+                        <li>Poster</li>
+                        <li>Poster</li>
+                        <li>Poster</li>
+                        <li>Poster</li>
+                    </ul> -->
+                </li>
             </ul>
           </div>
           <div class="menu-bar">
@@ -87,12 +104,22 @@
           <div class="head-title">
             <h1>Dizayn Göndər</h1>
           </div>
-          <div class="sub-title">
-            <strong>Dizaynınıza uyğun kateqoriya seçin</strong>
-            <span
-              >Dizaynlarınızı katiqoriyalara uyğun göndərməyiniz xahiş
-              olunur.</span
-            >
+          <div class="d-flex justify-content-between align-items-center m-0 p-0">
+            <div class="col-lg-6 m-0 p-0">
+              <div class="sub-title">
+                <strong>Dizaynınıza uyğun kateqoriya seçin</strong>
+                <span
+                  >Dizaynlarınızı katiqoriyalara uyğun göndərməyiniz xahiş
+                  olunur.</span
+                >
+              </div>
+            </div>
+            <div class="col-lg-6 m-0 p-0 design-box">
+              <div id="add-column" class="add-column d-flex align-items-center m-0 p-0">
+                  <i class="fa-solid fa-plus"></i>
+                <span>Yeni xana əlavə et</span>
+              </div>
+            </div>
           </div>
           <form action="">
             <div id="box-wrapper" class="row align-items-center m-0 p-0">
@@ -114,10 +141,37 @@
                     </ul>
                </div>
               </div>
-              <div class="col-lg-5 m-0 p-0 design-box">
-                <div id="add-column" class="add-column d-flex align-items-center m-0 p-0">
-                    <i class="fa-solid fa-plus"></i>
-                  <span>Yeni xana əlavə et</span>
+              <div class="col-lg-5 col-sm-12 m-0 p-0 design-box">
+                <input
+                    id="concept-input"
+                  class="concept-input"
+                  type="text"
+                  placeholder="* Konsept (Qeyri-Real)"
+                  readonly
+                />
+                <i id="concept-open-icon" class="fa-solid fa-angle-down"></i>
+                  <div id="concepts" class="concepts">
+                    <ul id="concept-list" class="list-unstyled m-0 p-0">
+                        <li>Poster</li>
+                        <li>Poster</li>
+                        <li>Poster</li>
+                        <li>Poster</li>
+                    </ul>
+               </div>
+              </div>
+              <div class="col-lg-12 col-sm-12 m-0 p-0 design-box">
+                <input
+                    id="title-input"
+                  class="title-input"
+                  type="text"
+                  placeholder="* Dizayn başlığı"
+                />
+              </div>
+              <div class="col-lg-12 m-0 p-0 design-text">
+                <div class="text">
+                  <textarea 
+                  placeholder="* Dizayn haqqında"
+                  maxlength="150"></textarea>
                 </div>
               </div>
               <div class="col-lg-5 col-sm-12 m-0 p-0 design-box project-input">
@@ -237,44 +291,65 @@
       </section>
     </main>
 
-     <!-- FOOTER -->
-     <footer id="footer" style="padding: 6rem 0px 3rem 0px">
-      <div class="custom-container">
-        <div
-          class="d-flex justify-content-between align-items-center m-0 p-0 footer-info"
-        >
-          <div class="footer-left col-lg-6 col-sm-12">
-            <div>
-              <a href="">(+994 70) 815 66 16</a>
+      <!-- FOOTER -->
+      <footer id="footer" style="padding: 6rem 0px 3rem 0px">
+        <div class="custom-container">
+          <div
+            class="d-flex justify-content-between align-items-end m-0 p-0 footer-info"
+          >
+            <div class="footer-left col-lg-4 col-sm-12 m-0 p-0">
+              <div>
+                <a href="">(+994 70) 815 66 16</a>
+              </div>
+              <div>
+                <a href="">info@azerbaijandesignsummit.az</a>
+              </div>
             </div>
-            <div>
-              <a href="">info@azerbaijandesignsummit.az</a>
+            <div class="footer-icons-mobile">
+              <div class="icons">
+                <ul class="list-unstyled d-flex align-items-center m-0 p-0">
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="footer-icons">
-            <div class="icons">
-              <ul class="list-unstyled d-flex align-items-center m-0 p-0">
-                <li>
-                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fa-brands fa-instagram"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fa-brands fa-youtube"></i></a>
-                </li>
-                <li>
-                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </li>
-              </ul>
+            <div class="footer-center col-lg-3 col-sm-12 m-0 p-0">
+              <h3>@2019 Azerbaijan Design Summit</h3>
             </div>
-          </div>
-          <div class="footer-right col-lg-6 col-sm-12">
-            <h3>@2019 Azerbaijan Design Summit</h3>
+            <div class="col-lg-5 footer-right m-0 p-0">
+              <div>
+                <ul class="list-unstyled d-flex align-items-center m-0 p-0">
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <span>All right reserved - Adroit Agency</span>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
 
     <script src="static/scripts/script.js"></script>

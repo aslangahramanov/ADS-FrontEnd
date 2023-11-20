@@ -23,6 +23,8 @@
 
             .image-box{
                 height: 22%;
+                
+
 
                 img{
                     width: 100%;
@@ -30,6 +32,13 @@
                     object-fit: cover;
                     background-color: white;
                 }
+
+
+                
+            }
+            
+            .active-image{
+                border: 3px solid #F05F6B !important;
             }
         }
 
@@ -79,6 +88,7 @@
                 font-size: 16px;
                 border-radius: 50px;
                 color: white;
+                cursor: pointer ;
             }
         }
     }
@@ -88,12 +98,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px;
+        padding-right: 10px;
         margin-top: 40px;
 
         .prev-btn, .next-btn{
             display: flex;
             align-items: center;
+            cursor: pointer;
 
             .icon{
                 border: 1px solid white;

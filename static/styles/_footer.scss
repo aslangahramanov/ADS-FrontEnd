@@ -6,19 +6,54 @@
         }
     }
 
-    .footer-icons{
+    .footer-icons-mobile{
         display: none;
     }
 
-    .footer-right{
+    .footer-center{
         h3{
             font-size: 18px;
             text-align: end;
             color: #AAAAAA;
         }
     }
-}
 
+    .footer-right{
+            font-size: 18px;
+            text-align: end;
+            color: #AAAAAA;
+                display: block !important;
+                    ul {
+                        justify-content: end;
+                        li {
+                            margin: 0 0 10px 10px;
+    
+                            a {
+                                border: 1px solid rgba(255, 255, 255, 0.555);;
+                                border-radius: 50%;
+                                padding: 6px;
+    
+                                i {
+                                    width: 18px;
+                                    height: 18px;
+                                    text-align: center;
+                                    font-size: 14px;
+                                    color: rgba(255, 255, 255, 0.555);
+                                    transition: 400ms ease-in-out;
+    
+                                }
+    
+    
+                                &:hover {
+                                    i {
+                                        transform: rotate(360deg);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
 @media screen and (max-width: 767px) {
     #footer{
@@ -71,16 +106,54 @@
                 }
             }
         
-            .footer-right{
+            .footer-center{
                 h3{
-                    font-size: 14px !important;
+                    font-size: 18px;
                     text-align: center;
                     color: #AAAAAA;
+                    display: none;
                 }
             }
+        
+            .footer-right{
+                    font-size: 18px;
+                    text-align: center;
+                    color: #AAAAAA;
+                        display: block !important;
+                            ul {
+                                justify-content: center;
+                                margin: 20px 0 !important;
+                                li {
+                                    margin: 0 0 10px 10px;
+            
+                                    a {
+                                        border: 1px solid rgba(255, 255, 255, 0.555);;
+                                        border-radius: 50%;
+                                        padding: 6px;
+            
+                                        i {
+                                            width: 18px;
+                                            height: 18px;
+                                            text-align: center;
+                                            font-size: 14px;
+                                            color: rgba(255, 255, 255, 0.555);
+                                            transition: 400ms ease-in-out;
+            
+                                        }
+            
+            
+                                        &:hover {
+                                            i {
+                                                transform: rotate(360deg);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
         }
     }
-}
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     /* Tabletler için özel stil ayarları */

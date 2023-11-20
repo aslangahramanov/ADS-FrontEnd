@@ -123,10 +123,13 @@ const loginButton = document.getElementById("login-button");
 const loginPopup = document.getElementById("login-popup");
 const loginWrapper = document.getElementById("login-wrapper");
 
-loginButton.addEventListener("click", () => {
-  loginPopup.style.display = "block";
-  document.body.style.overflow = "hidden";
-});
+
+if (loginButton){
+  loginButton.addEventListener("click", () => {
+    loginPopup.style.display = "block";
+    document.body.style.overflow = "hidden";
+  });
+}
 
 if (loginWrapper) {
   loginWrapper.addEventListener("click", () => {
@@ -1129,6 +1132,21 @@ if (countryInput) {
     }
   });
 
+  openButton.addEventListener("click", () => {
+    if (countriesBox.classList.contains("active-box")) {
+      countriesBox.classList.remove("active-box");
+      openButton.style.borderTopRightRadius = "50px";
+      openButton.style.borderBottomRightRadius = "50px";
+    } else {
+      countriesBox.classList.add("active-box");
+      openButton.style.borderTopRightRadius = "20px";
+      openButton.style.borderBottomRightRadius = "0px";
+    }
+  });
+
+
+  
+
   const countryEls = document.querySelectorAll("#country-list li");
 
   function findCountryCode(countryName) {
@@ -1162,7 +1180,7 @@ const sendDesignSection = document.getElementById("send-design");
 
 if (sendDesignSection) {
   const categoryInput = document.getElementById("category-input");
-
+  const categoryDropIcon = document.getElementById("category-open-icon")
   const categoryList = document.getElementById("category-list");
   const categoryesBox = document.getElementById("categoryes");
 
@@ -1178,6 +1196,37 @@ if (sendDesignSection) {
     }
   });
 
+
+  const conceptInput = document.getElementById("concept-input");
+  const conceptDropIcon = document.getElementById("concept-open-icon")
+  const conceptList = document.getElementById("concept-list");
+  const conceptesBox = document.getElementById("concepts");
+
+  conceptInput.addEventListener("click", () => {
+    if (conceptesBox.classList.contains("active-box")) {
+      conceptesBox.classList.remove("active-box");
+      conceptInput.style.borderTopRightRadius = "50px";
+      conceptInput.style.borderBottomRightRadius = "50px";
+    } else {
+      conceptesBox.classList.add("active-box");
+      conceptInput.style.borderTopRightRadius = "20px";
+      conceptInput.style.borderBottomRightRadius = "0px";
+    }
+  });
+
+  categoryDropIcon.addEventListener("click", () => {
+    if (categoryesBox.classList.contains("active-box")) {
+      categoryesBox.classList.remove("active-box");
+      categoryInput.style.borderTopRightRadius = "50px";
+      categoryInput.style.borderBottomRightRadius = "50px";
+    } else {
+      categoryesBox.classList.add("active-box");
+      categoryInput.style.borderTopRightRadius = "20px";
+      categoryInput.style.borderBottomRightRadius = "0px";
+    }
+  });
+
+
   const categoryEls = document.querySelectorAll("#category-list li");
 
   categoryEls.forEach((el) => {
@@ -1187,6 +1236,19 @@ if (sendDesignSection) {
       categoryesBox.classList.remove("active-box");
       categoryInput.style.borderTopRightRadius = "50px";
       categoryInput.style.borderBottomRightRadius = "50px";
+    });
+  });
+
+
+  const conceptEls = document.querySelectorAll("#concept-list li");
+
+  conceptEls.forEach((el) => {
+    el.addEventListener("click", () => {
+      let selectedConcept = el.textContent;
+      conceptInput.value = selectedConcept;
+      conceptesBox.classList.remove("active-box");
+      conceptInput.style.borderTopRightRadius = "50px";
+      conceptInput.style.borderBottomRightRadius = "50px";
     });
   });
 

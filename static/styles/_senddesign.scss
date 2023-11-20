@@ -2,6 +2,39 @@
     padding: 14rem 0 10rem 0;
     width: 100%;
 
+
+    #box-wrapper{
+        .project-input{
+            margin-bottom: 8rem !important;
+
+        }
+
+        .design-text{
+            width: 100%;
+            margin-bottom: 6rem !important;
+
+
+            .text{
+                width: 81%;
+                height: 100px;
+                overflow: hidden;
+        
+                textarea{
+                    width: 100%;
+                    height: 100%;
+                    padding: 10px 50px 55px 20px;
+                    border: 1px solid white;
+                    outline: none;
+                    background-color: transparent;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    color: white;
+                    word-wrap: break-word;
+                    resize: none;
+                }
+            }
+        }
+    }
     .head-title {
         width: 100%;
         margin-bottom: 40px;
@@ -13,20 +46,19 @@
     }
 
     .sub-title {
-        width: 100%;
+        margin-bottom: 50px;
 
 
         strong {
             font-size: 16px;
             color: white !important;
             display: block;
-            letter-spacing: 1px;
+            font-weight: 400;
         }
 
         span {
             font-size: 16px;
             color: rgba(255, 255, 255, 0.650);
-            letter-spacing: 1px;
 
         }
     }
@@ -36,32 +68,44 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-top: 4rem !important;
+        margin-bottom: 2rem !important;
 
 
-        .category-input {
-            width: 70%;
+        .category-input, .concept-input {
+            width: 80%;
             padding: 10px 20px;
             outline: none;
             border: 1px solid white;
             background-color: transparent;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
-            margin-bottom: 20px;
             position: relative;
             color: white;
+            cursor: pointer;
         }
 
-        #category-open-icon{
+        .title-input{
+            width: 81%;
+            padding: 10px 20px;
+            border: 1px solid white;
+            background-color: transparent;
+            border-top-right-radius: 50px;
+            border-bottom-right-radius: 50px;
+            color: white;
+
+        }
+        #category-open-icon, #concept-open-icon{
             position: absolute;
-            top: 25%;
-            left: 63%;
+            top: 35%;
+            left: 74%;
             font-size: 16px;
             color: rgba(255, 255, 255, 0.471);
+            cursor: pointer;
         }
 
-        .categoryes{
-            width: 70%;
+        
+        .categoryes, .concepts{
+            width: 80%;
             display: none;
             position: absolute;
             z-index: 20;
@@ -94,6 +138,9 @@
 
         }
 
+        
+        
+
         .active-box{
             display: block !important;
         }
@@ -101,6 +148,7 @@
 
         .add-column {
             margin-bottom: 20px !important;
+            cursor: pointer;
 
             i {
                 padding: 8px 9px;
@@ -187,7 +235,6 @@
         
     }
     .send-button{
-        margin-top: 5rem;
         button{
             padding: 10px 50px;
             border-top-right-radius: 50px;
@@ -195,6 +242,7 @@
             color: black;
             background-color: white;
             font-size: 18px;
+            cursor: pointer;
         }
     }
 }

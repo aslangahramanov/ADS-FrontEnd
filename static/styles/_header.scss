@@ -171,6 +171,67 @@
                     }
                 }
 
+
+                .select-menu {
+                    width: 100%;
+                    padding: 8px 20px;
+                    outline: none;
+                    border: 1px solid white;
+                    background-color: transparent;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                    position: relative;
+                    color: white;
+                    cursor: pointer;
+                }
+
+
+
+                #category-open-icon, #concept-open-icon{
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 92%;
+                    font-size: 16px;
+                    color: rgba(255, 255, 255, 0.471);
+                    cursor: pointer;
+                }
+
+                // .categoryes, .concepts{
+                //     width: 80%;
+                //     display: none;
+                //     position: absolute;
+                //     z-index: 20;
+                //     top: 50%;
+                //     margin-top: 10px;
+                //     height: 150px;
+                //     overflow-y: scroll;
+                //     border-bottom: 1px solid white;
+                //     border-right: 1px solid white;
+                //     border-left: 1px solid white;
+                //     background-color: black;
+        
+                //     ul{
+                //         background-color: black;
+        
+        
+                //         li{
+                //             color: white;
+                //             padding: 10px 20px;
+                //             border-bottom: 1px solid rgba(255, 255, 255, 0.373);
+                //             cursor: pointer;
+                //             transition: 100ms;
+        
+                //             &:hover{
+                //                 background-color: rgb(36, 36, 36);
+                //             }
+        
+                //         }
+                //     }
+        
+                // }
+        
+
             }
 
             .username{
