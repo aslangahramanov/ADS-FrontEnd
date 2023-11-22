@@ -1,4 +1,8 @@
 #register{
+    background: url(../../images/Group\ 218.svg);
+    background-position: 400px -350px;
+    background-size: 170%;
+    background-repeat: no-repeat;
     padding: 15rem 0 10rem 0;
     
 
@@ -155,11 +159,16 @@
     }
 
     .register-submit{
-        background-color: white;
-        padding: 10px 40px;
-        border-top-right-radius: 50px;
-        border-bottom-right-radius: 50px;
-        cursor: pointer;
+        margin-top: 50px !important;
+        border-top-right-radius: 50px !important;
+        border-bottom-right-radius: 50px !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+
+        span{
+            font-size: 18px !important;
+        }
+        
     }
 }
 

@@ -1191,16 +1191,30 @@ if (sendDesignSection) {
       categoryInput.style.borderBottomRightRadius = "50px";
     } else {
       categoryesBox.classList.add("active-box");
-      categoryInput.style.borderTopRightRadius = "20px";
-      categoryInput.style.borderBottomRightRadius = "0px";
+      categoryInput.style.borderTopRightRadius = "0px";
+      categoryInput.style.borderBottomRightRadius = "20px";
+    }
+  });
+
+  
+  categoryDropIcon.addEventListener("click", () => {
+    if (categoryesBox.classList.contains("active-box")) {
+      categoryesBox.classList.remove("active-box");
+      categoryInput.style.borderTopRightRadius = "50px";
+      categoryInput.style.borderBottomRightRadius = "50px";
+    } else {
+      categoryesBox.classList.add("active-box");
+      categoryInput.style.borderTopRightRadius = "0px";
+      categoryInput.style.borderBottomRightRadius = "20px";
     }
   });
 
 
   const conceptInput = document.getElementById("concept-input");
-  const conceptDropIcon = document.getElementById("concept-open-icon")
+  const conceptDropIcon = document.getElementById("concept-icon")
   const conceptList = document.getElementById("concept-list");
-  const conceptesBox = document.getElementById("concepts");
+  const conceptesBox = document.getElementById("concepts-box");
+
 
   conceptInput.addEventListener("click", () => {
     if (conceptesBox.classList.contains("active-box")) {
@@ -1209,20 +1223,22 @@ if (sendDesignSection) {
       conceptInput.style.borderBottomRightRadius = "50px";
     } else {
       conceptesBox.classList.add("active-box");
-      conceptInput.style.borderTopRightRadius = "20px";
-      conceptInput.style.borderBottomRightRadius = "0px";
+      conceptInput.style.borderTopRightRadius = "0px";
+      conceptInput.style.borderBottomRightRadius = "20px";
     }
   });
 
-  categoryDropIcon.addEventListener("click", () => {
-    if (categoryesBox.classList.contains("active-box")) {
-      categoryesBox.classList.remove("active-box");
-      categoryInput.style.borderTopRightRadius = "50px";
-      categoryInput.style.borderBottomRightRadius = "50px";
+
+  conceptDropIcon.addEventListener("click", () => {
+    console.log("SALAM");
+    if (conceptesBox.classList.contains("active-box")) {
+      conceptesBox.classList.remove("active-box");
+      conceptInput.style.borderTopRightRadius = "50px";
+      conceptInput.style.borderBottomRightRadius = "50px";
     } else {
-      categoryesBox.classList.add("active-box");
-      categoryInput.style.borderTopRightRadius = "20px";
-      categoryInput.style.borderBottomRightRadius = "0px";
+      conceptesBox.classList.add("active-box");
+      conceptInput.style.borderTopRightRadius = "0px";
+      conceptInput.style.borderBottomRightRadius = "20px";
     }
   });
 
@@ -1240,17 +1256,17 @@ if (sendDesignSection) {
   });
 
 
-  const conceptEls = document.querySelectorAll("#concept-list li");
+  // const conceptEls = document.querySelectorAll("#concept-list li");
 
-  conceptEls.forEach((el) => {
-    el.addEventListener("click", () => {
-      let selectedConcept = el.textContent;
-      conceptInput.value = selectedConcept;
-      conceptesBox.classList.remove("active-box");
-      conceptInput.style.borderTopRightRadius = "50px";
-      conceptInput.style.borderBottomRightRadius = "50px";
-    });
-  });
+  // conceptEls.forEach((el) => {
+  //   el.addEventListener("click", () => {
+  //     let selectedConcept = el.textContent;
+  //     conceptInput.value = selectedConcept;
+  //     conceptesBox.classList.remove("active-box");
+  //     conceptInput.style.borderTopRightRadius = "50px";
+  //     conceptInput.style.borderBottomRightRadius = "50px";
+  //   });
+  // });
 
   // ADD TO DIV
 

@@ -65,23 +65,42 @@
             <ul
               class="list-unstyled d-flex justify-content-between align-items-center m-0 p-0"
             >
-              <li class="active"><a href="index.html">Ana Səhifə</a></li>
+              <li><a class="inline-link" href="#header">Ana Səhifə</a></li>
               <li><a class="inline-link" href="#about">Haqqımızda</a></li>
               <li><a class="inline-link" href="#peoples">Spiker</a></li>
               <li><a class="inline-link" href="#partners">Partnyorlar</a></li>
-              <li><a class="inline-link" href="">Əlaqə</a></li>
-              <!-- <li><button id="login-button" type="button">
-                        <span>Daxil ol</span>
-                    </button>
-                </li> -->
-              <li class="username">
+              <li><a class="inline-link" href="#footer">Əlaqə</a></li>
+              <li>
+                <a href="" class="btn">
+                  <svg width="150" height="62">
+                    <defs>
+                        <linearGradient id="grad1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="100%" stop-color="#ffffff" />
+                        </linearGradient>
+                    </defs>
+                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="140" height="50"></rect>
+                  </svg>
+                    <span>Daxil ol</span>
+                </a>
+              </li>
+               <!-- <li class="username">
                 <a href="account.html"><span>İştirakçı / </span><span>Aslan Qəhrəmanov</span></a>
               </li>
               <li>
-                <button type="button">
-                  <span>Çıxış</span>
-                </button>
-              </li>
+                <a href="" class="btn">
+                  <svg width="130" height="57">
+                    <defs>
+                        <linearGradient id="grad1">
+                            <stop offset="0%" stop-color="#ffffff"/>
+                            <stop offset="100%" stop-color="#ffffff" />
+                        </linearGradient>
+                    </defs>
+                     <rect class="logout" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="120" height="45"></rect>
+                  </svg>
+                    <span>Çıxış</span>
+                </a>
+              </li> -->
             </ul>
           </div>
           <div class="menu-bar">
@@ -90,6 +109,10 @@
         </div>
       </div>
     </header>
+
+      
+
+
 
     <main>
       <!-- HERO -->
@@ -108,8 +131,13 @@
                 </p>
               </div>
               <div class="d-flex buttons align-items-center">
-                <a href="senddesign.html" class="send-design">Dizayn Göndər</a>
-                <span>Yeniliklərə hazır ol</span>
+                <a href="senddesign.html">
+                  <button class="move-button">
+                    <span class="text">Dizayn Göndər</span>
+                  </button>
+                </a>
+                <!-- <a href="senddesign.html" class="send-design">Dizayn Göndər</a> -->
+                <span class="news-text">Yeniliklərə hazır ol</span>
               </div>
             </div>
             <div class="col-lg-6 right">

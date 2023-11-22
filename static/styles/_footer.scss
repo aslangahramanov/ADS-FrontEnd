@@ -30,20 +30,21 @@
                             margin: 0 0 10px 10px;
     
                             a {
-                                border: 1px solid rgba(255, 255, 255, 0.555);;
+                                border: 1px  solid rgba(255, 255, 255, 0.555);;
                                 border-radius: 50%;
-                                padding: 6px;
+                                padding: 9px 11px;
     
                                 i {
-                                    width: 18px;
-                                    height: 18px;
+                                    width: 16px;
+                                    height: 16px;
                                     text-align: center;
-                                    font-size: 14px;
+                                    font-size: 16px;
                                     color: rgba(255, 255, 255, 0.555);
                                     transition: 400ms ease-in-out;
-    
+                            
                                 }
-    
+
+                                    
     
                                 &:hover {
                                     i {
@@ -81,7 +82,7 @@
                             margin-right: 10px;
     
                             a {
-                                border: 1px solid white;
+                                border: 1px  solid white;
                                 border-radius: 50%;
                                 padding: 8px;
     
@@ -128,7 +129,7 @@
                                     margin: 0 0 10px 10px;
             
                                     a {
-                                        border: 1px solid rgba(255, 255, 255, 0.555);;
+                                        border: 1px  solid rgba(255, 255, 255, 0.555);;
                                         border-radius: 50%;
                                         padding: 6px;
             
@@ -149,6 +150,8 @@
                                             }
                                         }
                                     }
+
+                                    
                                 }
                             }
                         }

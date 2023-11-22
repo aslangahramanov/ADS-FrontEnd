@@ -74,7 +74,7 @@
             li {
                 margin-left: 24px;
 
-                a {
+                .inline-link {
                     color: white;
                     font-size: 16px;
                     line-height: 24px;
@@ -102,73 +102,68 @@
                     }
                 }
 
-                button {
-                    padding: 7px 30px;
-                    border-radius: 50px;
-                    background: transparent;
-                    border: 1px solid rgb(255, 255, 255);
+                .btn {
                     position: relative;
+                    text-align: center;
+                    background-color: transparent;
                     cursor: pointer;
+                    text-decoration:none;
+                    font-size:12px;
+                    letter-spacing: 0.045em;
+                    margin-left: 70px;
+                    margin-right: 40px;
+                }
+                
+                .btn svg {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                
+                .btn svg rect {
+                    //stroke: #EC0033;
+                    stroke-width: 1;
+                    stroke-dasharray: 400, 0;
+                    stroke-dashoffset: 0;
+                    -webkit-transition: all 800ms ease-in-out;
+                    transition: all 800ms ease-in-out;
+                }
 
+                .btn svg .logout {
+                    //stroke: #EC0033;
+                    stroke-width: 1;
+                    stroke-dasharray: 400, 0;
+                    stroke-dashoffset: 0;
+                    -webkit-transition: all 800ms ease-in-out;
+                    transition: all 800ms ease-in-out;
+                }
+                
+                .btn span{
+                    font-size: 16px;
+                    font-weight: 600;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                  background: #ffffff;
+                  background: -moz-linear-gradient(left,  #ffffff);
+                  background: -webkit-linear-gradient(left,  #ffffff);
+                  background: linear-gradient(to right,  #ffffff);
+                  background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+                
+                .btn:hover svg rect {
+                    stroke-width: 2;
+                    stroke-dasharray: 90, 515;
+                    stroke-dashoffset: 435;
+                }
 
-                    &::after {
-                        position: absolute;
-                        content: "";
-                        height: 0%;
-                        width: 0%;
-                        left: 50%;
-                        right: 0%;
-                        top: 50%;
-                        background-color: white;
-                        border-top-left-radius: 50px;
-                        border-bottom-left-radius: 50px;
-                        transition: 400ms ease-in-out;
-                    }
-
-                    &::before {
-                        position: absolute;
-                        content: "";
-                        height: 0%;
-                        width: 0%;
-                        right: 0;
-                        left: 50%;
-                        top: 50%;
-                        background-color: white;
-                        border-top-right-radius: 50px;
-                        border-bottom-right-radius: 50px;
-                        transition: 400ms ease-in-out;
-                    }
-
-                    span {
-                        color: white;
-                        font-size: 16px;
-                        line-height: 24px;
-                        font-weight: 400;
-                        letter-spacing: 1px;
-                        position: relative;
-                        z-index: 10;
-                        transition: 400ms;
-                    }
-
-                    &:hover {
-
-                        &::after {
-                            width: 50%;
-                            height: 100%;
-                            left: 0;
-                            top: 0;
-                        }
-
-                        &::before {
-                            width: 50%;
-                            height: 100%;
-                            top: 0;
-                        }
-
-                        span {
-                            color: black !important;
-                        }
-                    }
+                .btn:hover svg .logout{
+                    stroke-width: 2;
+                    stroke-dasharray: 90, 425;
+                    stroke-dashoffset: 380;
                 }
 
 
@@ -255,6 +250,9 @@
     background-color: black !important;
     padding: 20px 0 !important;
 }
+
+
+  
 
 
 @media screen and (max-width: 767px) {
