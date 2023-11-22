@@ -63,7 +63,7 @@
         span {
             font-size: 16px;
             color: rgba(255, 255, 255, 0.650);
-
+            font-style: italic;
         }
     }
 
@@ -235,23 +235,36 @@
                 font-size: 15px;
                 color: rgba(255, 255, 255, 0.596);
                 font-weight: 300;
+                font-style: italic;
+                
             }
         }
         
     }
     .send-button{
         button{
-            border-top-right-radius: 50px !important;
-            border-bottom-right-radius: 50px !important;
-            border-top-left-radius: 0px !important;
-            border-bottom-left-radius: 0px !important;
+                padding: 12px 40px;
+                margin-top: 50px !important;
+                border-top-right-radius: 50px !important;
+                border-bottom-right-radius: 50px !important;
+                cursor: pointer;
+                background-color: white;
+                color: black;
+                transition: 200ms ease-in-out;
+        
 
             span{
                 font-size: 16px !important;
             }
+
+            &:hover{
+                background-color: #F05F6B;
+                color: white;
+            }
+        }
+
         }
     }
-}
 
 
 @media screen and (max-width: 767px) {

@@ -56,40 +56,30 @@
             <ul
               class="list-unstyled d-flex justify-content-between align-items-center m-0 p-0"
             >
-              <li class="username">
-                <a href="account.html"><span>İştirakçı / </span><span>Aslan Qəhrəmanov</span></a>
-              </li>
+            <li class="username">
+              <a href="account.html"><span>İştirakçı / </span><span>Aslan Qəhrəmanov</span></a>
+            </li>
+            <li>
+              <a class="logout" href="">
+                Çıxış
+              </a>
               <li>
-                <a href="" class="btn">
-                  <svg width="130" height="57">
-                    <defs>
-                        <linearGradient id="grad1">
-                            <stop offset="0%" stop-color="#ffffff"/>
-                            <stop offset="100%" stop-color="#ffffff" />
-                        </linearGradient>
-                    </defs>
-                     <rect class="logout" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="120" height="45"></rect>
-                  </svg>
-                    <span>Çıxış</span>
-                </a>
+                <input
+                  id="select-menu"
+                class="select-menu"
+                type="text"
+                value="Qablaşdırma dizaynı"
+                readonly
+              />
+              <i id="concept-open-icon" class="fa-solid fa-angle-down"></i>
+                <div id="concepts" class="categoryes">
+                  <!-- <ul id="concept-list" class="list-unstyled m-0 p-0">
+                      <li>Poster</li>
+                      <li>Poster</li>
+                      <li>Poster</li>
+                      <li>Poster</li>
+                  </ul> -->
               </li>
-                <li>
-                  <input
-                    id="select-menu"
-                  class="select-menu"
-                  type="text"
-                  value="Qablaşdırma dizaynı"
-                  readonly
-                />
-                <i id="concept-open-icon" class="fa-solid fa-angle-down"></i>
-                  <div id="concepts" class="categoryes">
-                    <!-- <ul id="concept-list" class="list-unstyled m-0 p-0">
-                        <li>Poster</li>
-                        <li>Poster</li>
-                        <li>Poster</li>
-                        <li>Poster</li>
-                    </ul> -->
-                </li>
             </ul>
           </div>
           <div class="menu-bar">
@@ -284,7 +274,7 @@
               </div>
             </div>
             <div class="send-button">
-              <button class="move-button">
+              <button>
                 <span class="text">Dizayn Göndər</span>
               </button>
             </div>

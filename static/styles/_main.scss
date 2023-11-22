@@ -40,7 +40,13 @@
                     position: relative;
                     background-color: white;
                     color: black;
+                    transition: 200ms ease-in-out;
 
+
+                    &:hover{
+                        background-color:#F05F6B;
+                        color: rgb(255, 255, 255);
+                    }
                 }
 
                 .news-text {

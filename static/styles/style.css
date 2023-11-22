@@ -197,66 +197,30 @@ body {
 #header .navbar ul li .inline-link:hover::after {
   width: 100%;
 }
-#header .navbar ul li .btn {
-  position: relative;
-  text-align: center;
+#header .navbar ul li .logout {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 12px 40px;
+  color: white;
   background-color: black;
+  transition: 200ms ease-in-out;
+}
+#header .navbar ul li .logout:hover {
+  background-color: white;
+  color: black;
+}
+#header .navbar ul li .login {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 8px 40px;
+  color: white;
+  background-color: black;
+  transition: 200ms ease-in-out;
   cursor: pointer;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.045em;
-  margin-left: 70px;
-  margin-right: 40px;
 }
-#header .navbar ul li .btn svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: black;
-}
-#header .navbar ul li .btn svg rect {
-  stroke-width: 1;
-  stroke-dasharray: 400, 0;
-  stroke-dashoffset: 0;
-  transition: all 800ms ease-in-out;
-  background-color: black;
-}
-#header .navbar ul li .btn svg .logout {
-  stroke-width: 1;
-  stroke-dasharray: 400, 0;
-  stroke-dashoffset: 0;
-  transition: all 800ms ease-in-out;
-  background-color: black;
-}
-#header .navbar ul li .btn span {
-  font-size: 16px;
-  font-weight: 600;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  background: linear-gradient(to right, #ffffff);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#header .navbar ul li .btn:hover svg rect {
-  stroke-width: 2;
-  stroke-dasharray: 90, 515;
-  stroke-dashoffset: 435;
-}
-#header .navbar ul li .btn:hover svg rect {
-  stroke-width: 2;
-  stroke-dasharray: 90, 515;
-  stroke-dashoffset: 435;
-}
-#header .navbar ul li .btn:hover svg .logout {
-  stroke-width: 2;
-  stroke-dasharray: 65, 463;
-  stroke-dashoffset: 380;
-  background-color: black;
+#header .navbar ul li .login:hover {
+  background-color: white;
+  color: black;
 }
 #header .navbar ul li .select-menu {
   width: 100%;
@@ -274,7 +238,7 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 92%;
+  left: 95%;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.471);
   cursor: pointer;
@@ -362,6 +326,11 @@ body {
   position: relative;
   background-color: white;
   color: black;
+  transition: 200ms ease-in-out;
+}
+#hero .information .left .buttons .send-design:hover {
+  background-color: #F05F6B;
+  color: rgb(255, 255, 255);
 }
 #hero .information .left .buttons .news-text {
   margin-left: 30px;
@@ -1430,6 +1399,7 @@ body {
 #register .info .base-info span, #register .info .password-info span {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.562);
+  font-style: italic;
 }
 #register .info input {
   width: 30%;
@@ -1491,14 +1461,21 @@ body {
   display: block !important;
 }
 #register .register-submit {
+  padding: 12px 40px;
   margin-top: 50px !important;
   border-top-right-radius: 50px !important;
   border-bottom-right-radius: 50px !important;
-  border-top-left-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 200ms ease-in-out;
 }
 #register .register-submit span {
   font-size: 18px !important;
+}
+#register .register-submit:hover {
+  background-color: #F05F6B;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -1560,7 +1537,7 @@ body {
     cursor: pointer;
   }
   #register .register-submit {
-    padding: 12 48px !important;
+    padding: 12px 48px !important;
     font-size: 20px !important;
   }
 }
@@ -1724,6 +1701,7 @@ body {
 #send-design .sub-title span {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.65);
+  font-style: italic;
 }
 #send-design .design-box {
   margin-right: 5rem !important;
@@ -1867,15 +1845,24 @@ body {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.596);
   font-weight: 300;
+  font-style: italic;
 }
 #send-design .send-button button {
+  padding: 12px 40px;
+  margin-top: 50px !important;
   border-top-right-radius: 50px !important;
   border-bottom-right-radius: 50px !important;
-  border-top-left-radius: 0px !important;
-  border-bottom-left-radius: 0px !important;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: 200ms ease-in-out;
 }
 #send-design .send-button button span {
   font-size: 16px !important;
+}
+#send-design .send-button button:hover {
+  background-color: #F05F6B;
+  color: white;
 }
 
 @media screen and (max-width: 767px) {
@@ -2133,7 +2120,7 @@ body {
   justify-content: space-between;
   border: 1px solid white;
   border-radius: 50px;
-  padding: 2px 10px;
+  padding: 6px 10px;
   margin-top: 10px !important;
 }
 #head-division #projects .custom-container .wrapper .project-container .project-box .reyting .more-info .project-voice,
@@ -2141,6 +2128,7 @@ body {
   font-size: 14px !important;
   margin-top: 4px;
   color: rgba(255, 255, 255, 0.712);
+  margin: 0 !important;
 }
 
 @media screen and (max-width: 767px) {
@@ -2282,57 +2270,17 @@ body {
 #project-view .right-wrapper .submit-btn {
   margin-top: 4rem;
 }
-#project-view .right-wrapper .submit-btn .btn {
-  position: relative;
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 12px;
-  letter-spacing: 0.045em;
-  margin-left: 70px;
-  margin-right: 40px;
+#project-view .right-wrapper .submit-btn .access-btn {
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 10px 34px;
+  color: white;
+  background-color: black;
+  transition: 200ms ease-in-out;
 }
-#project-view .right-wrapper .submit-btn .btn svg {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-#project-view .right-wrapper .submit-btn .btn svg rect {
-  stroke-width: 1;
-  stroke-dasharray: 400, 0;
-  stroke-dashoffset: 0;
-  transition: all 800ms ease-in-out;
-}
-#project-view .right-wrapper .submit-btn .btn svg .logout {
-  stroke-width: 1;
-  stroke-dasharray: 400, 0;
-  stroke-dashoffset: 0;
-  transition: all 800ms ease-in-out;
-}
-#project-view .right-wrapper .submit-btn .btn span {
-  font-size: 16px;
-  font-weight: 600;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #ffffff;
-  background: linear-gradient(to right, #ffffff);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-#project-view .right-wrapper .submit-btn .btn:hover svg rect {
-  stroke-width: 2;
-  stroke-dasharray: 90, 477;
-  stroke-dashoffset: 435;
-}
-#project-view .right-wrapper .submit-btn .btn:hover svg .logout {
-  stroke-width: 2;
-  stroke-dasharray: 90, 425;
-  stroke-dashoffset: 350;
+#project-view .right-wrapper .submit-btn .access-btn:hover {
+  background-color: white;
+  color: black;
 }
 #project-view .navigations {
   display: flex;
@@ -2353,6 +2301,7 @@ body {
   height: 40px;
   position: relative;
   margin-right: 15px;
+  transition: 200ms ease-in-out;
 }
 #project-view .navigations .prev-btn .icon i, #project-view .navigations .next-btn .icon i {
   position: absolute;
@@ -2364,6 +2313,12 @@ body {
 #project-view .navigations .prev-btn .text span, #project-view .navigations .next-btn .text span {
   color: white;
   font-size: 16px;
+}
+#project-view .navigations .prev-btn:hover .icon, #project-view .navigations .next-btn:hover .icon {
+  background-color: white;
+}
+#project-view .navigations .prev-btn:hover .icon i, #project-view .navigations .next-btn:hover .icon i {
+  color: black;
 }
 #project-view .navigations .next-btn {
   margin-right: 20px;

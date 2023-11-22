@@ -79,6 +79,8 @@
             span{
                 font-size: 16px;
                 color: rgba(255, 255, 255, 0.562);
+                font-style: italic;
+
             }
         }
 
@@ -159,14 +161,23 @@
     }
 
     .register-submit{
+        padding: 12px 40px;
         margin-top: 50px !important;
         border-top-right-radius: 50px !important;
         border-bottom-right-radius: 50px !important;
-        border-top-left-radius: 0px !important;
-        border-bottom-left-radius: 0px !important;
+        cursor: pointer;
+        background-color: white;
+        color: black;
+        transition: 200ms ease-in-out;
 
         span{
             font-size: 18px !important;
+        }
+
+
+        &:hover{
+            background-color: #F05F6B;
+            color: white;
         }
         
     }
@@ -256,7 +267,7 @@
         }
     
         .register-submit{
-            padding: 12 48px !important;
+            padding: 12px 48px !important;
             font-size: 20px !important;
         }
     }
