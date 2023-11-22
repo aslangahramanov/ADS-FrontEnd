@@ -32,6 +32,12 @@ body {
   margin: auto !important;
 }
 
+@media screen and (min-width: 1600px) {
+  .custom-container {
+    width: 1500px !important;
+    margin: auto !important;
+  }
+}
 /* Yatay scroll çubuğu rengini değiştirme (sadece Webkit tabanlı tarayıcılarda çalışır) */
 ::-webkit-scrollbar {
   background: transparent;
@@ -163,6 +169,9 @@ body {
 #header .logo .lang ul .active ul {
   margin-top: 5px !important;
 }
+#header .navbar {
+  padding: 0px !important;
+}
 #header .navbar ul li {
   margin-left: 24px;
 }
@@ -191,7 +200,7 @@ body {
 #header .navbar ul li .btn {
   position: relative;
   text-align: center;
-  background-color: transparent;
+  background-color: black;
   cursor: pointer;
   text-decoration: none;
   font-size: 12px;
@@ -204,18 +213,21 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: black;
 }
 #header .navbar ul li .btn svg rect {
   stroke-width: 1;
   stroke-dasharray: 400, 0;
   stroke-dashoffset: 0;
   transition: all 800ms ease-in-out;
+  background-color: black;
 }
 #header .navbar ul li .btn svg .logout {
   stroke-width: 1;
   stroke-dasharray: 400, 0;
   stroke-dashoffset: 0;
   transition: all 800ms ease-in-out;
+  background-color: black;
 }
 #header .navbar ul li .btn span {
   font-size: 16px;
@@ -235,17 +247,23 @@ body {
   stroke-dasharray: 90, 515;
   stroke-dashoffset: 435;
 }
+#header .navbar ul li .btn:hover svg rect {
+  stroke-width: 2;
+  stroke-dasharray: 90, 515;
+  stroke-dashoffset: 435;
+}
 #header .navbar ul li .btn:hover svg .logout {
   stroke-width: 2;
-  stroke-dasharray: 90, 425;
+  stroke-dasharray: 65, 463;
   stroke-dashoffset: 380;
+  background-color: black;
 }
 #header .navbar ul li .select-menu {
   width: 100%;
   padding: 8px 20px;
   outline: none;
   border: 1px solid white;
-  background-color: transparent;
+  background-color: black;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;
@@ -522,11 +540,12 @@ body {
 }
 
 #peoples {
+  position: relative;
   width: 100%;
   background-image: url(../../images/Group\ 190.svg), url(../../images/Group\ 190.svg);
   background-repeat: no-repeat, no-repeat;
-  background-size: 200%, 200%;
-  background-position: 120% 38%, 120% 147%;
+  background-size: 180%, 200%;
+  background-position: 135% 37%, 120% 134%;
 }
 #peoples #founder .founder-section {
   padding: 9rem 60px 0 90px !important;
@@ -546,7 +565,7 @@ body {
 }
 #peoples #founder .image .founder-box {
   width: 100%;
-  height: 280px;
+  height: 300px;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
   background: url(../../images/Mask\ Group\ 47.png);
@@ -605,15 +624,18 @@ body {
 #peoples #announcers .announcers-slider .swiper-slide,
 #peoples #judges .announcers-slider .swiper-slide {
   position: relative;
-  transition: z-index 300ms ease-in-out; /* z-index değişikliklerini animasyonla geçiş yapar */
+  transition: z-index 300ms ease-in-out;
+  /* z-index değişikliklerini animasyonla geçiş yapar */
 }
 #peoples #announcers .announcers-slider .swiper-slide:hover,
 #peoples #judges .announcers-slider .swiper-slide:hover {
-  z-index: 1; /* Hover edildiğinde diğer elemanların önüne çıkmasını sağlar */
+  z-index: 1;
+  /* Hover edildiğinde diğer elemanların önüne çıkmasını sağlar */
 }
 #peoples #announcers .announcers-slider .swiper-slide:not(:hover),
 #peoples #judges .announcers-slider .swiper-slide:not(:hover) {
-  z-index: 0; /* Hover edilmediğinde arkada kalan elemanlar */
+  z-index: 0;
+  /* Hover edilmediğinde arkada kalan elemanlar */
 }
 #peoples #announcers .announcers-slider .box,
 #peoples #judges .announcers-slider .box {
@@ -633,7 +655,7 @@ body {
 #peoples #announcers .announcers-slider .box .announcer-image img,
 #peoples #judges .announcers-slider .box .announcer-image img {
   width: 100%;
-  height: 250px;
+  height: 300px;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
   -o-object-fit: cover;
@@ -1112,8 +1134,234 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Tabletler için özel stil ayarları */
 }
-@media screen and (min-width: 1024px) and (max-width: 1229px) {
-  /* Tabletler için özel stil ayarları */
+@media screen and (min-width: 1600px) {
+  #peoples {
+    position: relative;
+    width: 100%;
+    background-image: url(../../images/Group\ 190.svg), url(../../images/Group\ 190.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 170%, 170%;
+    background-position: 142% 34%, 140% 120%;
+  }
+  #peoples #founder .founder-section {
+    padding: 9rem 60px 0 90px !important;
+  }
+  #peoples #founder .title {
+    margin-bottom: 5rem;
+  }
+  #peoples #founder .title h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  #peoples #founder .image {
+    padding-right: 40px;
+    position: relative;
+    transition: 300ms ease-in-out;
+  }
+  #peoples #founder .image .founder-box {
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    background: url(../../images/Mask\ Group\ 47.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0px -60px;
+    filter: brightness(0.8);
+  }
+  #peoples #founder .image:hover {
+    transform: scale(1.1);
+  }
+  #peoples #founder .image .name {
+    position: absolute;
+    left: 7%;
+    top: 73%;
+  }
+  #peoples #founder .image .name span {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: medium;
+  }
+  #peoples #founder .image .name p {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 9px;
+  }
+  #peoples #founder .founder-about {
+    padding-left: 60px;
+  }
+  #peoples #founder .founder-about span {
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  #peoples #announcers,
+  #peoples #judges {
+    width: 100%;
+  }
+  #peoples #announcers .title,
+  #peoples #judges .title {
+    padding: 10rem 60px 8rem 90px;
+  }
+  #peoples #announcers .title h2,
+  #peoples #judges .title h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+  }
+  #peoples #announcers .announcers-slider,
+  #peoples #judges .announcers-slider {
+    /* Diğer elemanların z-index değerini ayarlamak için sınıf eklenebilir */
+  }
+  #peoples #announcers .announcers-slider .swiper-slide,
+  #peoples #judges .announcers-slider .swiper-slide {
+    position: relative;
+    transition: z-index 300ms ease-in-out;
+    /* z-index değişikliklerini animasyonla geçiş yapar */
+  }
+  #peoples #announcers .announcers-slider .swiper-slide:hover,
+  #peoples #judges .announcers-slider .swiper-slide:hover {
+    z-index: 1;
+    /* Hover edildiğinde diğer elemanların önüne çıkmasını sağlar */
+  }
+  #peoples #announcers .announcers-slider .swiper-slide:not(:hover),
+  #peoples #judges .announcers-slider .swiper-slide:not(:hover) {
+    z-index: 0;
+    /* Hover edilmediğinde arkada kalan elemanlar */
+  }
+  #peoples #announcers .announcers-slider .box,
+  #peoples #judges .announcers-slider .box {
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    transition: 300ms ease-in-out;
+    padding: 20px 0 !important;
+  }
+  #peoples #announcers .announcers-slider .box:hover,
+  #peoples #judges .announcers-slider .box:hover {
+    transform: scale(1.12);
+  }
+  #peoples #announcers .announcers-slider .box .announcer-image,
+  #peoples #judges .announcers-slider .box .announcer-image {
+    width: 100%;
+  }
+  #peoples #announcers .announcers-slider .box .announcer-image img,
+  #peoples #judges .announcers-slider .box .announcer-image img {
+    width: 100%;
+    height: 340px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    filter: grayscale(2) brightness(0.6);
+  }
+  #peoples #announcers .announcers-slider .box .name,
+  #peoples #judges .announcers-slider .box .name {
+    position: absolute;
+    left: 7%;
+    top: 68%;
+  }
+  #peoples #announcers .announcers-slider .box .name span,
+  #peoples #judges .announcers-slider .box .name span {
+    font-size: 24px;
+    color: #E4E4E4;
+    font-weight: medium;
+  }
+  #peoples #announcers .announcers-slider .box .name p,
+  #peoples #judges .announcers-slider .box .name p {
+    font-size: 16px;
+    color: #E4E4E4;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 14px;
+  }
+  #hero {
+    background: url(../../images/Layer\ 2.svg);
+    width: 100%;
+    padding-top: 16.5rem;
+    background-position: -1500px -1380px;
+  }
+  #hero .information {
+    padding: 0 7rem 0 7rem;
+  }
+  #hero .information .left h1 {
+    font-size: 45px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  #hero .information .left .responsive-text {
+    display: none;
+  }
+  #hero .information .left .buttons {
+    margin-top: 50px;
+  }
+  #hero .information .left .buttons .send-design {
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    color: black;
+  }
+  #hero .information .left .buttons .news-text {
+    margin-left: 30px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #B3B3B3;
+  }
+  #hero .information .right img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #hero .social-and-mail {
+    width: 100%;
+    padding: 4.5rem 0;
+  }
+  #hero .social-and-mail .social-media span {
+    color: white;
+    margin-right: 20px;
+    font-size: 16px;
+  }
+  #hero .social-and-mail .social-media .line {
+    width: 34px;
+    height: 0.1px;
+    background-color: white;
+    margin-right: 20px;
+  }
+  #hero .social-and-mail .social-media .icons ul li {
+    margin-right: 10px;
+  }
+  #hero .social-and-mail .social-media .icons ul li a {
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 10px 11px;
+  }
+  #hero .social-and-mail .social-media .icons ul li a i {
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    transition: 400ms ease-in-out;
+  }
+  #hero .social-and-mail .social-media .icons ul li a:hover i {
+    transform: rotate(360deg);
+  }
+  #hero .social-and-mail .mail {
+    text-align: end;
+  }
+  #hero .social-and-mail .mail a {
+    color: white;
+    font-size: 16px;
+  }
 }
 #register {
   background: url(../../images/Group\ 218.svg);
@@ -2034,14 +2282,57 @@ body {
 #project-view .right-wrapper .submit-btn {
   margin-top: 4rem;
 }
-#project-view .right-wrapper .submit-btn button {
-  border: 1px solid white;
+#project-view .right-wrapper .submit-btn .btn {
+  position: relative;
+  text-align: center;
   background-color: transparent;
-  padding: 6px 35px;
-  font-size: 16px;
-  border-radius: 50px;
-  color: white;
   cursor: pointer;
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 0.045em;
+  margin-left: 70px;
+  margin-right: 40px;
+}
+#project-view .right-wrapper .submit-btn .btn svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#project-view .right-wrapper .submit-btn .btn svg rect {
+  stroke-width: 1;
+  stroke-dasharray: 400, 0;
+  stroke-dashoffset: 0;
+  transition: all 800ms ease-in-out;
+}
+#project-view .right-wrapper .submit-btn .btn svg .logout {
+  stroke-width: 1;
+  stroke-dasharray: 400, 0;
+  stroke-dashoffset: 0;
+  transition: all 800ms ease-in-out;
+}
+#project-view .right-wrapper .submit-btn .btn span {
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  background: linear-gradient(to right, #ffffff);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#project-view .right-wrapper .submit-btn .btn:hover svg rect {
+  stroke-width: 2;
+  stroke-dasharray: 90, 477;
+  stroke-dashoffset: 435;
+}
+#project-view .right-wrapper .submit-btn .btn:hover svg .logout {
+  stroke-width: 2;
+  stroke-dasharray: 90, 425;
+  stroke-dashoffset: 350;
 }
 #project-view .navigations {
   display: flex;
@@ -2089,12 +2380,13 @@ body {
   display: none;
 }
 #footer .footer-center h3 {
-  font-size: 18px;
+  font-size: 16px;
   text-align: end;
   color: #AAAAAA;
+  margin: 0 !important;
 }
 #footer .footer-right {
-  font-size: 18px;
+  font-size: 16px;
   text-align: end;
   color: #AAAAAA;
   display: block !important;
@@ -2108,7 +2400,7 @@ body {
 #footer .footer-right ul li a {
   border: 1px solid rgba(255, 255, 255, 0.555);
   border-radius: 50%;
-  padding: 9px 11px;
+  padding: 8px 9px;
 }
 #footer .footer-right ul li a i {
   width: 16px;

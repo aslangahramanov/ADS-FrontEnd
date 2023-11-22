@@ -71,24 +71,24 @@
               <li><a class="inline-link" href="#partners">Partnyorlar</a></li>
               <li><a class="inline-link" href="#footer">Əlaqə</a></li>
               <li>
-                <a href="" class="btn">
+                <a href="#" class="btn" onmouseover="changeColor(this)">
                   <svg width="150" height="62">
                     <defs>
-                        <linearGradient id="grad1">
-                            <stop offset="0%" stop-color="#ffffff"/>
-                            <stop offset="100%" stop-color="#ffffff" />
-                        </linearGradient>
+                      <linearGradient id="grad1">
+                        <stop offset="0%" stop-color="#ffffff"/>
+                        <stop offset="100%" stop-color="#ffffff" />
+                      </linearGradient>
                     </defs>
-                     <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="140" height="50"></rect>
+                    <rect x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="140" height="50"></rect>
                   </svg>
-                    <span>Daxil ol</span>
+                  <span>Daxil ol</span>
                 </a>
               </li>
                <!-- <li class="username">
                 <a href="account.html"><span>İştirakçı / </span><span>Aslan Qəhrəmanov</span></a>
               </li>
               <li>
-                <a href="" class="btn">
+                <a href="" class="btn" id="anim-button">
                   <svg width="130" height="57">
                     <defs>
                         <linearGradient id="grad1">
@@ -96,7 +96,7 @@
                             <stop offset="100%" stop-color="#ffffff" />
                         </linearGradient>
                     </defs>
-                     <rect class="logout" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="120" height="45"></rect>
+                     <rect id="rect" class="logout red-stroked" x="5" y="5" rx="25" fill="none" stroke="url(#grad1)" width="120" height="45"></rect>
                   </svg>
                     <span>Çıxış</span>
                 </a>
@@ -605,7 +605,6 @@
           </div>
         </div>
       </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="static/scripts/script.js"></script>
   </body>

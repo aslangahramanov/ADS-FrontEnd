@@ -8,6 +8,11 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
+const animButton = document.getElementById("anim-button")
+const rect = document.getElementById("rect")
+
+
 const langButton = document.querySelector("#header .lang ul");
 const currentLangEl = document.querySelector("#header .lang ul li");
 const dropdownLangs = document.querySelector("#header .lang .lang-dropdown");

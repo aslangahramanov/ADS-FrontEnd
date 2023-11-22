@@ -40,6 +40,14 @@ body {
 }
 
 
+@media screen and (min-width: 1600px) {
+    .custom-container {
+        width: 1500px !important;
+        margin: auto !important;
+    }
+}
+
+
 
   /* Yatay scroll çubuğu rengini değiştirme (sadece Webkit tabanlı tarayıcılarda çalışır) */
 ::-webkit-scrollbar {

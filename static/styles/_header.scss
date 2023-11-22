@@ -70,6 +70,7 @@
 
 
     .navbar {
+        padding: 0px !important;
         ul {
             li {
                 margin-left: 24px;
@@ -105,7 +106,7 @@
                 .btn {
                     position: relative;
                     text-align: center;
-                    background-color: transparent;
+                    background-color: black;
                     cursor: pointer;
                     text-decoration:none;
                     font-size:12px;
@@ -119,6 +120,7 @@
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
+                    background-color: black;
                 }
                 
                 .btn svg rect {
@@ -128,6 +130,9 @@
                     stroke-dashoffset: 0;
                     -webkit-transition: all 800ms ease-in-out;
                     transition: all 800ms ease-in-out;
+                    background-color: black;
+
+                    
                 }
 
                 .btn svg .logout {
@@ -137,6 +142,7 @@
                     stroke-dashoffset: 0;
                     -webkit-transition: all 800ms ease-in-out;
                     transition: all 800ms ease-in-out;
+                    background-color: black;
                 }
                 
                 .btn span{
@@ -152,6 +158,7 @@
                   background: linear-gradient(to right,  #ffffff);
                   background-clip: text;
                   -webkit-text-fill-color: transparent;
+                  
                 }
                 
                 .btn:hover svg rect {
@@ -160,10 +167,18 @@
                     stroke-dashoffset: 435;
                 }
 
+                .btn:hover svg rect {
+                    stroke-width: 2;
+                    stroke-dasharray: 90, 515;
+                    stroke-dashoffset: 435;
+                }
+
+
                 .btn:hover svg .logout{
                     stroke-width: 2;
-                    stroke-dasharray: 90, 425;
+                    stroke-dasharray: 65, 463;
                     stroke-dashoffset: 380;
+                    background-color: black;
                 }
 
 
@@ -172,7 +187,7 @@
                     padding: 8px 20px;
                     outline: none;
                     border: 1px solid white;
-                    background-color: transparent;
+                    background-color: black;
                     border-top-right-radius: 50px;
                     border-bottom-right-radius: 50px;
                     position: relative;
