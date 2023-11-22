@@ -269,7 +269,6 @@
 }
 
 #peoples {
-    padding-bottom: 9rem;
     width: 100%;
     background-image: url(../../images/layer-one.png), url(../../images/layer-two.png);
     background-repeat: no-repeat, no-repeat;
@@ -277,7 +276,11 @@
     background-position: 120% 40%, 120% 140%;
 
     #founder {
-        padding: 9rem 60px 0 90px;
+        
+        .founder-section{
+            padding: 9rem 60px 0 90px !important;
+        }
+
 
         .title {
             margin-bottom: 5rem;
@@ -363,17 +366,30 @@
         }
 
         .announcers-slider {
+            .swiper-slide {
+            position: relative;
+            transition: z-index 300ms ease-in-out; /* z-index değişikliklerini animasyonla geçiş yapar */
+
+            &:hover {
+                z-index: 1; /* Hover edildiğinde diğer elemanların önüne çıkmasını sağlar */
+            }
+        }
+
+        /* Diğer elemanların z-index değerini ayarlamak için sınıf eklenebilir */
+        .swiper-slide:not(:hover) {
+            z-index: 0; /* Hover edilmediğinde arkada kalan elemanlar */
+        }
 
 
             .box {
                 border-top-right-radius: 300px;
                 border-bottom-right-radius: 300px;
-                padding: 0 20px !important;
                 transition: 300ms ease-in-out;
+                padding: 20px 0 !important;
 
 
                 &:hover{
-                    transform: scale(1.1);
+                    transform: scale(1.12);
                 }
 
                 .announcer-image {
@@ -420,7 +436,9 @@
 }
 
 #partners {
-    padding: 0 60px 0 90px;
+    .partners-wrapper{
+        padding: 9rem 60px 0 90px !important;
+    }
 
     .title {
         margin-bottom: 8rem;
