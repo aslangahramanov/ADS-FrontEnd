@@ -29,7 +29,7 @@
                     padding: 10px 50px 55px 20px;
                     border: 1px solid white;
                     outline: none;
-                    background-color: transparent;
+                    background-color: black;
                     border-top-right-radius: 50px;
                     border-bottom-right-radius: 50px;
                     color: white;
@@ -46,6 +46,7 @@
         h1 {
             font-size: 40px;
             color: white;
+            font-weight: 600;
         }
     }
 
@@ -57,7 +58,7 @@
             font-size: 16px;
             color: white !important;
             display: block;
-            font-weight: 400;
+            font-weight: 600;
         }
 
         span {
@@ -72,7 +73,7 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        margin-bottom: 2rem !important;
+        margin-bottom: 1.2rem !important;
 
 
         .category-input, .concept-input {
@@ -80,7 +81,7 @@
             padding: 10px 20px;
             outline: none;
             border: 1px solid white;
-            background-color: transparent;
+            background-color: black;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             position: relative;
@@ -96,6 +97,7 @@
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             color: white;
+            background-color: black;
 
         }
         #category-open-icon, #concept-icon{
@@ -180,6 +182,7 @@
             align-items: center;
             margin-right: 40px;
             cursor: pointer;
+            background-color: black;
 
             .file-input{
                 display: none;
@@ -210,7 +213,7 @@
                 padding: 10px 50px 55px 20px;
                 border: 1px solid white;
                 outline: none;
-                background-color: transparent;
+                background-color: black;
                 border-top-right-radius: 50px;
                 border-bottom-right-radius: 50px;
                 color: white;
@@ -244,13 +247,13 @@
     .send-button{
         button{
                 padding: 12px 40px;
-                margin-top: 50px !important;
                 border-top-right-radius: 50px !important;
                 border-bottom-right-radius: 50px !important;
                 cursor: pointer;
                 background-color: white;
                 color: black;
                 transition: 200ms ease-in-out;
+                font-weight: 500;
         
 
             span{

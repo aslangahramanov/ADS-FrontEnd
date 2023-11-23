@@ -1,9 +1,7 @@
-@font-face{
-    font-family:"helvetica";
-    src:url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"),
-    url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
-}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
 
 *{
     margin: 0;
@@ -24,7 +22,7 @@ a {
 
 /* Define some default text styles */
 body {
-    font-family: 'helvetica';
+    font-family: 'Montserrat', sans-serif;
     background-color: black;
     user-select: none !important;
 }

@@ -13,6 +13,8 @@
     />
     <link rel="stylesheet" href="static/vendors/bootstrap.min.css" />
     <link rel="stylesheet" href="static/styles/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
   </head>
   <body>
     <!-- HEADER -->
@@ -77,7 +79,7 @@
 
     <!-- REGISTER -->
     <main>
-      <section id="register">
+      <section id="register" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="600">
         <div class="custom-container">
           <div class="title">
             <h1>Qeydiyyat</h1>
@@ -206,7 +208,7 @@
     </main>
     
       <!-- FOOTER -->
-      <footer id="footer" style="padding: 9rem 0px 3rem 0px">
+      <footer id="footer" style="padding: 9rem 0px 3rem 0px" data-aos="zoom-in-down" data-aos-offset="200" data-aos-duration="600">
         <div class="custom-container">
           <div
             class="d-flex justify-content-between align-items-end m-0 p-0 footer-info"
@@ -266,5 +268,8 @@
       </footer>
 
     <script src="static/scripts/script.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

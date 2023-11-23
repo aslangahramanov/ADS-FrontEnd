@@ -1,8 +1,5 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "helvetica";
-  src: url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("woff"), url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("opentype"), url("https://candyfonts.com/wp-data/2018/10/26/11538/HELR45W.ttf") format("truetype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +17,7 @@ a {
 
 /* Define some default text styles */
 body {
-  font-family: "helvetica";
+  font-family: "Montserrat", sans-serif;
   background-color: black;
   -webkit-user-select: none !important;
      -moz-user-select: none !important;
@@ -297,10 +294,11 @@ body {
   /* Tabletler için özel stil ayarları */
 }
 #hero {
-  background: url(../../images/Layer\ 2.svg);
+  background: url(../../images/Pattern.svg);
   width: 100%;
   padding-top: 14rem;
-  background-position: -1500px -1380px;
+  background-size: 200%;
+  background-position: -1700px -950px;
 }
 #hero .information {
   padding: 0 7rem 0 7rem;
@@ -310,6 +308,7 @@ body {
   color: white;
   font-weight: bold;
   margin-bottom: 10px;
+  line-height: 41px;
 }
 #hero .information .left .responsive-text {
   display: none;
@@ -326,7 +325,7 @@ body {
   position: relative;
   background-color: white;
   color: black;
-  transition: 200ms ease-in-out;
+  transition: 100ms ease-in-out;
 }
 #hero .information .left .buttons .send-design:hover {
   background-color: #F05F6B;
@@ -366,6 +365,7 @@ body {
   border: 1px solid white;
   border-radius: 50%;
   padding: 10px 11px;
+  background-color: black;
 }
 #hero .social-and-mail .social-media .icons ul li a i {
   width: 16px;
@@ -554,7 +554,7 @@ body {
 #peoples #founder .image .name span {
   font-size: 26px;
   color: #ffffff;
-  font-weight: medium;
+  font-weight: 600;
 }
 #peoples #founder .image .name p {
   font-size: 16px;
@@ -568,9 +568,10 @@ body {
 }
 #peoples #founder .founder-about span {
   color: white;
-  font-size: 18px;
+  font-size: 17px;
   line-height: 30px;
   letter-spacing: 1px;
+  font-weight: 300 !important;
 }
 #peoples #announcers,
 #peoples #judges {
@@ -636,6 +637,7 @@ body {
   position: absolute;
   left: 7%;
   top: 68%;
+  font-weight: 600;
 }
 #peoples #announcers .announcers-slider .box .name span,
 #peoples #judges .announcers-slider .box .name span {
@@ -1248,10 +1250,11 @@ body {
     line-height: 14px;
   }
   #hero {
-    background: url(../../images/Layer\ 2.svg);
+    background: url(../../images/Pattern.svg);
     width: 100%;
-    padding-top: 16.5rem;
-    background-position: -1500px -1380px;
+    padding-top: 14rem;
+    background-size: 200%;
+    background-position: -2000px -1100px;
   }
   #hero .information {
     padding: 0 7rem 0 7rem;
@@ -1345,9 +1348,11 @@ body {
 #register .title h1 {
   font-size: 44px;
   color: white;
+  font-weight: 600;
 }
 #register .image {
   margin-right: 60px !important;
+  background-color: black;
 }
 #register .image .file-input {
   display: none;
@@ -1393,7 +1398,7 @@ body {
   display: block;
   font-size: 18px;
   color: white;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 18px;
 }
 #register .info .base-info span, #register .info .password-info span {
@@ -1403,7 +1408,7 @@ body {
 }
 #register .info input {
   width: 30%;
-  background-color: transparent;
+  background-color: black;
   color: white;
   outline: none;
   border: 1px solid white;
@@ -1472,6 +1477,7 @@ body {
 }
 #register .register-submit span {
   font-size: 18px !important;
+  font-weight: 500;
 }
 #register .register-submit:hover {
   background-color: #F05F6B;
@@ -1674,7 +1680,7 @@ body {
   padding: 10px 50px 55px 20px;
   border: 1px solid white;
   outline: none;
-  background-color: transparent;
+  background-color: black;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   color: white;
@@ -1688,6 +1694,7 @@ body {
 #send-design .head-title h1 {
   font-size: 40px;
   color: white;
+  font-weight: 600;
 }
 #send-design .sub-title {
   margin-bottom: 50px;
@@ -1696,7 +1703,7 @@ body {
   font-size: 16px;
   color: white !important;
   display: block;
-  font-weight: 400;
+  font-weight: 600;
 }
 #send-design .sub-title span {
   font-size: 16px;
@@ -1708,14 +1715,14 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 2rem !important;
+  margin-bottom: 1.2rem !important;
 }
 #send-design .design-box .category-input, #send-design .design-box .concept-input {
   width: 80%;
   padding: 10px 20px;
   outline: none;
   border: 1px solid white;
-  background-color: transparent;
+  background-color: black;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   position: relative;
@@ -1730,6 +1737,7 @@ body {
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   color: white;
+  background-color: black;
 }
 #send-design .design-box #category-open-icon, #send-design .design-box #concept-icon {
   position: absolute;
@@ -1796,6 +1804,7 @@ body {
   align-items: center;
   margin-right: 40px;
   cursor: pointer;
+  background-color: black;
 }
 #send-design .design-box .image .file-input {
   display: none;
@@ -1823,7 +1832,7 @@ body {
   padding: 10px 50px 55px 20px;
   border: 1px solid white;
   outline: none;
-  background-color: transparent;
+  background-color: black;
   border-top-right-radius: 50px;
   border-bottom-right-radius: 50px;
   color: white;
@@ -1849,13 +1858,13 @@ body {
 }
 #send-design .send-button button {
   padding: 12px 40px;
-  margin-top: 50px !important;
   border-top-right-radius: 50px !important;
   border-bottom-right-radius: 50px !important;
   cursor: pointer;
   background-color: white;
   color: black;
   transition: 200ms ease-in-out;
+  font-weight: 500;
 }
 #send-design .send-button button span {
   font-size: 16px !important;
@@ -2037,6 +2046,7 @@ body {
 #head-division .title-section .left h1 {
   font-size: 45px;
   color: white;
+  font-weight: 600;
 }
 #head-division .title-section .right {
   text-align: end;
@@ -2050,12 +2060,14 @@ body {
   font-size: 22px;
   margin-right: 10px;
   color: white;
+  font-weight: 500;
 }
 #head-division .title-section .right h2 {
   display: inline-block;
   margin-bottom: 0 !important;
   font-size: 45px;
   color: white;
+  font-weight: 600;
 }
 #head-division #projects {
   padding-top: 80px;
@@ -2114,6 +2126,7 @@ body {
 }
 #head-division #projects .custom-container .wrapper .project-container .project-box .reyting .info span {
   color: #5C5C5C;
+  font-weight: 500;
 }
 #head-division #projects .custom-container .wrapper .project-container .project-box .reyting .more-info {
   display: flex;
@@ -2122,6 +2135,7 @@ body {
   border-radius: 50px;
   padding: 6px 10px;
   margin-top: 10px !important;
+  background-color: black;
 }
 #head-division #projects .custom-container .wrapper .project-container .project-box .reyting .more-info .project-voice,
 #head-division #projects .custom-container .wrapper .project-container .project-box .reyting .more-info .project-number {
@@ -2129,6 +2143,7 @@ body {
   margin-top: 4px;
   color: rgba(255, 255, 255, 0.712);
   margin: 0 !important;
+  font-weight: 500;
 }
 
 @media screen and (max-width: 767px) {
@@ -2355,12 +2370,13 @@ body {
 #footer .footer-right ul li a {
   border: 1px solid rgba(255, 255, 255, 0.555);
   border-radius: 50%;
-  padding: 8px 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
 }
 #footer .footer-right ul li a i {
-  width: 16px;
-  height: 16px;
-  text-align: center;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.555);
   transition: 400ms ease-in-out;

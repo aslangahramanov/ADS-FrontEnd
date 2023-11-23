@@ -8,11 +8,11 @@
 
 
 #hero {
-    background: url(../../images/Layer\ 2.svg);
+    background: url(../../images/Pattern.svg);
     width: 100%;
     padding-top: 14rem;
-    background-position: -1500px -1380px;
-
+    background-size: 200%;
+    background-position: -1700px -950px;
     .information {
         padding: 0 7rem 0 7rem;
 
@@ -22,6 +22,7 @@
                 color: white;
                 font-weight: bold;
                 margin-bottom: 10px;
+                line-height: 41px;
             }
 
             .responsive-text {
@@ -40,8 +41,7 @@
                     position: relative;
                     background-color: white;
                     color: black;
-                    transition: 200ms ease-in-out;
-
+                    transition: 100ms ease-in-out;
 
                     &:hover{
                         background-color:#F05F6B;
@@ -94,6 +94,7 @@
                             border: 1px solid white;
                             border-radius: 50%;
                             padding: 10px 11px;
+                            background-color: black;
 
                             i {
                                 width: 16px;
@@ -337,7 +338,7 @@
                 span {
                     font-size: 26px;
                     color: #ffffff;
-                    font-weight: medium;
+                    font-weight: 600;
                 }
 
                 p {
@@ -357,9 +358,10 @@
 
             span {
                 color: white;
-                font-size: 18px;
+                font-size: 17px;
                 line-height: 30px;
                 letter-spacing: 1px;
+                font-weight: 300 !important;
             }
         }
     }
@@ -428,6 +430,7 @@
                     position: absolute;
                     left: 7%;
                     top: 68%;
+                    font-weight: 600;
 
                     span {
                         font-size: 24px;
@@ -1220,10 +1223,11 @@
 
     
 #hero {
-    background: url(../../images/Layer\ 2.svg);
+    background: url(../../images/Pattern.svg);
     width: 100%;
-    padding-top: 16.5rem;
-    background-position: -1500px -1380px;
+    padding-top: 14rem;
+    background-size: 200%;
+    background-position: -2000px -1100px;
 
     .information {
         padding: 0 7rem 0 7rem;
