@@ -8,11 +8,11 @@
 
 
 #hero {
-    background: url(../../images/Pattern.svg);
+    background: url(../../images/Layer\ 2.svg);
     width: 100%;
     padding-top: 14rem;
-    background-size: 200%;
-    background-position: -1700px -950px;
+    background-size: 165%;
+    background-position: -1250px -1150px;
     .information {
         padding: 0 7rem 0 7rem;
 
@@ -481,11 +481,23 @@
 
     .partner-box {
         width: 100%;
-        height: 140px;
+        min-height: 150px;
         border-top-right-radius: 300px;
         border-bottom-right-radius: 300px;
         margin-bottom: 6rem;
         background-color: #0D0D0D;
+        overflow: hidden;
+        
+        .sponsor, .partner{
+            width: 100%;
+            padding: 0 20px 0 0px !important;
+            .sponsor-image, .partner-image{
+                padding: 15px !important;
+                filter: grayscale(2) brightness(0.8);
+                margin: auto !important;
+            }
+        }
+
     }
 
 }
@@ -946,26 +958,33 @@
     #partners {
         padding: 0 !important;
 
-        .title {
-            margin-bottom: 2.5rem !important;
-
-            h2 {
-                font-size: 38px !important;
-                font-weight: bold !important;
+        .partners-wrapper{
+            .title {
+                margin-bottom: 2.5rem !important;
+    
+                h2 {
+                    font-size: 38px !important;
+                    font-weight: bold !important;
+                    border: 1px solid red;
+                }
             }
-        }
-
-        .box-title {
-            margin-bottom: 1rem !important;
-
-            span {
-                font-size: 20px !important;
+    
+            .box-title {
+                margin-bottom: 1rem !important;
+    
+                span {
+                    font-size: 20px !important;
+                }
             }
-        }
-
-        .partner-box {
-            height: 100px !important;
-            margin-bottom: 2rem !important;
+    
+            .partner-box {
+                height: 100px !important;
+                margin-bottom: 2rem !important;
+    
+                .partner{
+                    border: 1px solid red;
+                }
+            }
         }
 
     }
@@ -1223,11 +1242,11 @@
 
     
 #hero {
-    background: url(../../images/Pattern.svg);
+    background: url(../../images/Layer\ 2.svg);
     width: 100%;
     padding-top: 14rem;
-    background-size: 200%;
-    background-position: -2000px -1100px;
+    background-size: 170%;
+    background-position: -1420px -1300px;
 
     .information {
         padding: 0 7rem 0 7rem;
@@ -1338,3 +1357,8 @@
     }
 }
 }
+
+
+
+
+

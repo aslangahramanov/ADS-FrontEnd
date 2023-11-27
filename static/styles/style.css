@@ -294,11 +294,11 @@ body {
   /* Tabletler için özel stil ayarları */
 }
 #hero {
-  background: url(../../images/Pattern.svg);
+  background: url(../../images/Layer\ 2.svg);
   width: 100%;
   padding-top: 14rem;
-  background-size: 200%;
-  background-position: -1700px -950px;
+  background-size: 165%;
+  background-position: -1250px -1150px;
 }
 #hero .information {
   padding: 0 7rem 0 7rem;
@@ -674,11 +674,21 @@ body {
 }
 #partners .partner-box {
   width: 100%;
-  height: 140px;
+  min-height: 150px;
   border-top-right-radius: 300px;
   border-bottom-right-radius: 300px;
   margin-bottom: 6rem;
   background-color: #0D0D0D;
+  overflow: hidden;
+}
+#partners .partner-box .sponsor, #partners .partner-box .partner {
+  width: 100%;
+  padding: 0 20px 0 0px !important;
+}
+#partners .partner-box .sponsor .sponsor-image, #partners .partner-box .sponsor .partner-image, #partners .partner-box .partner .sponsor-image, #partners .partner-box .partner .partner-image {
+  padding: 15px !important;
+  filter: grayscale(2) brightness(0.8);
+  margin: auto !important;
 }
 
 #login-popup {
@@ -1030,22 +1040,26 @@ body {
   #partners {
     padding: 0 !important;
   }
-  #partners .title {
+  #partners .partners-wrapper .title {
     margin-bottom: 2.5rem !important;
   }
-  #partners .title h2 {
+  #partners .partners-wrapper .title h2 {
     font-size: 38px !important;
     font-weight: bold !important;
+    border: 1px solid red;
   }
-  #partners .box-title {
+  #partners .partners-wrapper .box-title {
     margin-bottom: 1rem !important;
   }
-  #partners .box-title span {
+  #partners .partners-wrapper .box-title span {
     font-size: 20px !important;
   }
-  #partners .partner-box {
+  #partners .partners-wrapper .partner-box {
     height: 100px !important;
     margin-bottom: 2rem !important;
+  }
+  #partners .partners-wrapper .partner-box .partner {
+    border: 1px solid red;
   }
   @keyframes frequence-before {
     0% {
@@ -1250,11 +1264,11 @@ body {
     line-height: 14px;
   }
   #hero {
-    background: url(../../images/Pattern.svg);
+    background: url(../../images/Layer\ 2.svg);
     width: 100%;
     padding-top: 14rem;
-    background-size: 200%;
-    background-position: -2000px -1100px;
+    background-size: 170%;
+    background-position: -1420px -1300px;
   }
   #hero .information {
     padding: 0 7rem 0 7rem;

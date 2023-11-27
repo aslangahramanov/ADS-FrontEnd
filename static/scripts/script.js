@@ -122,7 +122,71 @@ if (playButton && openVideoWrapper && youtubeVideo) {
       disableOnInteraction: false, // Kullanıcı etkileşimi (dokunma) sonrası otomatik kaydırmayı devam ettir
     },
   });
+
+  var swiper = new Swiper(".sponsorSwiper", {
+    slidesPerView: 2,
+    spaceBetween: 0,
+    loop: false,
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      "@1.00": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      "@1.50": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+  });
+
+
+
+  var swiper = new Swiper(".partnerSwiper", {
+    slidesPerView: 5,
+    spaceBetween: 0,
+    loop: true,
+    breakpoints: {
+      "@0.00": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      "@0.75": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      "@1.00": {
+        slidesPerView: 2,
+        spaceBetween: 0,
+      },
+      "@1.50": {
+        slidesPerView: 5,
+        spaceBetween: 0,
+      },
+    },
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: true,
+    },
+  });
+
+  
 }
+
+
+
+
 
 const loginButton = document.getElementById("login-button");
 const loginPopup = document.getElementById("login-popup");
